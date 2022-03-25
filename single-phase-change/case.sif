@@ -1,0 +1,192 @@
+Header
+  CHECK KEYWORDS "Warn"
+  Mesh DB "." "."
+End
+
+Simulation
+  Max Output Level = 4
+  Coordinate System = Axi Symmetric
+  Simulation Type = Steady state
+  Steady State Max Iterations = 10
+  Output File = case.result
+End
+
+Constants
+  Stefan Boltzmann = 5.6704e-08
+End
+
+! eqn_main
+Equation 1
+  Active Solvers(2) = 1 3   ! HeatSolver, MeshUpdate, 
+End
+
+! eqn_phase_1
+Equation 2
+  Active Solvers(1) = 2   ! SteadyPhaseChange, 
+End
+
+
+! HeatSolver
+Solver 1
+  Equation = HeatSolver
+  Procedure = "HeatSolve" "HeatSolver"
+  Variable = "Temperature"
+  Variable Dofs = 1
+  Calculate Loads = True
+  Exec Solver = Always
+  Nonlinear System Convergence Tolerance = 1e-06
+  Nonlinear System Max Iterations = 1000
+  Nonlinear System Relaxation Factor = 0.7
+  Steady State Convergence Tolerance = 1e-06
+  Stabilize = True
+  Optimize Bandwidth = True
+  Linear System Solver = Iterative
+  Linear System Iterative Method = BiCGStab
+  Linear System Max Iterations = 1000
+  Linear System Preconditioning = ILU
+  Linear System Precondition Recompute = 1
+  Linear System Convergence Tolerance = 1e-08
+  Linear System Abort Not Converged = True
+  Linear System Residual Output = 1
+  Smart Heater Control After Tolerance = 0.0001
+End
+
+! SteadyPhaseChange
+Solver 2
+  Equation = SteadyPhaseChange
+  Variable = "PhaseSurface"
+  Procedure = "SteadyPhaseChange" "SteadyPhaseChange"
+End
+
+! MeshUpdate
+Solver 3
+  Equation = Mesh Update
+  Linear System Solver = Iterative
+  Linear System Iterative Method = BiCGStab
+  Linear System Preconditioning = ILU1
+  Linear System Max Iterations = 10000
+  Linear System Convergence Tolerance = 1e-09
+  Linear System Residual Output = 1
+  Steady State Convergence Tolerance = 1e-06
+End
+
+! ResultOutputSolver
+Solver 4
+  Exec Solver = After timestep
+  Equation = ResultOutputSolver
+  Procedure = "ResultOutputSolve" "ResultOutputSolver"
+  VTU Format = True
+  Save Geometry Ids = Logical True
+End
+
+
+! tin_liquid
+Material 1
+  Density = 6980.0
+  Electric Conductivity = 2080000
+  Emissivity = 0.064
+  Heat Capacity = 252.7
+  Heat Conductivity = 29.0
+  Relative Permeability = 1
+  Relative Permittivity = 1
+  Liquid = Logical True
+End
+
+! tin_solid
+Material 2
+  Density = 7179.0
+  Electric Conductivity = 4380000
+  Emissivity = 0.064
+  Heat Capacity = 244.0
+  Heat Conductivity = 60.0
+  Relative Permeability = 1
+  Relative Permittivity = 1
+  Solid = Logical True
+  Melting Point = 505
+  Latent Heat = 59600
+End
+
+
+! crystal
+Body 1
+  Target Bodies(1) = 1
+  Equation = 1  ! eqn_main
+  Material = 2  ! tin_solid
+End
+
+! melt
+Body 2
+  Target Bodies(1) = 2
+  Equation = 1  ! eqn_main
+  Material = 1  ! tin_liquid
+End
+
+! feed
+Body 3
+  Target Bodies(1) = 3
+  Equation = 1  ! eqn_main
+  Material = 2  ! tin_solid
+End
+
+! phase_change_feed
+Body 4
+  Target Bodies(1) = 5
+  Equation = 2  ! eqn_phase_1
+  Material = 2  ! tin_solid
+End
+
+! phase_change_crys
+Body 5
+  Target Bodies(1) = 4
+  Material = 2  ! tin_solid
+End
+
+
+! bnd_melt
+Boundary Condition 1
+  Target Boundaries(1) = 6
+  Heat Flux BC = True
+  Heat Flux = 15000.0
+  Mesh Update 1 = 0
+End
+
+! bnd_feed
+Boundary Condition 2
+  Target Boundaries(1) = 8
+  Temperature = 300
+  Mesh Update 1 = 0
+  Mesh Update 2 = 0
+End
+
+! bnd_crys
+Boundary Condition 3
+  Target Boundaries(1) = 7
+  Temperature = 300
+  Mesh Update 1 = 0
+  Mesh Update 2 = 0
+End
+
+! bnd_others
+Boundary Condition 4
+  Target Boundaries(1) = 9
+  Mesh Update 1 = 0
+End
+
+! if_feed_melt
+Boundary Condition 5
+  Target Boundaries(1) = 5
+  Phase Change = Logical True
+  Phase Velocity 1 = 0
+  Phase Velocity 2 = 1e-06
+  Melting Point = 505
+  Latent Heat = 59600
+  Normal Target Body = 3
+  Heat Flux = Variable Coordinate 1
+    Real Procedure "SteadyPhaseChange" "MeltingHeat"
+  Mesh Update 1 = 0
+  Mesh Update 2 = Equals PhaseSurface
+  Body Id = Integer 4
+End
+
+
+

@@ -1,0 +1,2516 @@
+ELMER SOLVER (v 9.0) STARTED AT: 2022/03/25 07:45:19
+ParCommInit:  Initialize #PEs:            1
+MAIN: 
+MAIN: =============================================================
+MAIN: ElmerSolver finite element software, Welcome!
+MAIN: This program is free software licensed under (L)GPL
+MAIN: Copyright 1st April 1995 - , CSC - IT Center for Science Ltd.
+MAIN: Webpage http://www.csc.fi/elmer, Email elmeradm@csc.fi
+MAIN: Version: 9.0 (Rev: Release, Compiled: 2020-11-10)
+MAIN:  Running one task without MPI parallelization.
+MAIN:  Running with just one thread per task.
+MAIN:  Lua interpreted linked in.
+MAIN: =============================================================
+LoadInputFile: Reading only "Run Control" section
+MAIN: 
+MAIN: 
+MAIN: -------------------------------------
+MAIN: Reading Model: case.sif
+LoadInputFile: Scanning input file: case.sif
+LoadInputFile: Scanning only size info
+LoadInputFile: First time visiting
+LoadInputFile: Reading base load of sif file
+LoadInputFile: Loading input file: case.sif
+LoadInputFile: Reading base load of sif file
+Loading user function library: [SteadyPhaseChange]...[MeltingHeat]
+LoadInputFile: Number of BCs: 5
+LoadInputFile: Number of Body Forces: 0
+LoadInputFile: Number of Initial Conditions: 0
+LoadInputFile: Number of Materials: 2
+LoadInputFile: Number of Equations: 2
+LoadInputFile: Number of Solvers: 4
+LoadInputFile: Number of Bodies: 5
+ElmerAsciiMesh: Base mesh name: ./.
+MAIN: -------------------------------------
+OptimizeBandwidth: ---------------------------------------------------------
+OptimizeBandwidth: Computing matrix structure for: heatsolver...done.
+OptimizeBandwidth: Half bandwidth without optimization: 404
+OptimizeBandwidth: 
+OptimizeBandwidth: Bandwidth Optimization ...done.
+OptimizeBandwidth: Half bandwidth after optimization: 20
+OptimizeBandwidth: ---------------------------------------------------------
+OptimizeBandwidth: ---------------------------------------------------------
+OptimizeBandwidth: Computing matrix structure for: steadyphasechange...done.
+OptimizeBandwidth: Half bandwidth without optimization: 2
+OptimizeBandwidth: 
+OptimizeBandwidth: Bandwidth Optimization ...done.
+OptimizeBandwidth: Half bandwidth after optimization: 2
+OptimizeBandwidth: ---------------------------------------------------------
+OptimizeBandwidth: ---------------------------------------------------------
+OptimizeBandwidth: Computing matrix structure for: mesh update...done.
+OptimizeBandwidth: Half bandwidth without optimization: 404
+OptimizeBandwidth: 
+OptimizeBandwidth: Bandwidth Optimization ...done.
+OptimizeBandwidth: Half bandwidth after optimization: 20
+OptimizeBandwidth: ---------------------------------------------------------
+ElmerSolver: Number of timesteps to be saved: 10
+MAIN: 
+MAIN: -------------------------------------
+MAIN:  Steady state iteration:            1
+MAIN: -------------------------------------
+MAIN: 
+HeatSolve: 
+HeatSolve: 
+HeatSolve: -------------------------------------
+HeatSolve:  TEMPERATURE ITERATION           1
+HeatSolve: -------------------------------------
+HeatSolve: 
+HeatSolve: Starting Assembly...
+HeatSolve: Assembly done
+       1 0.4576E-01
+       2 0.2861E-01
+       3 0.2283E-01
+       4 0.1567E-01
+       5 0.7611E-02
+       6 0.3158E-02
+       7 0.9908E-03
+       8 0.1466E-03
+       9 0.5518E-04
+      10 0.3643E-04
+      11 0.2459E-04
+      12 0.1547E-04
+      13 0.6754E-05
+      14 0.9033E-06
+      15 0.1198E-06
+      16 0.1350E-07
+      17 0.2687E-08
+      17 0.2687E-08
+ComputeChange: NS (ITER=1) (NRM,RELC): (  350.65640      2.0000000     ) :: heatsolver
+HeatSolve: iter:    1 Assembly: (s)    0.01    0.01
+HeatSolve: iter:    1 Solve:    (s)    0.00    0.00
+HeatSolve:  Result Norm   :    350.65639605242717
+HeatSolve:  Relative Change :    2.0000000000000000
+HeatSolve: 
+HeatSolve: 
+HeatSolve: -------------------------------------
+HeatSolve:  TEMPERATURE ITERATION           2
+HeatSolve: -------------------------------------
+HeatSolve: 
+HeatSolve: Starting Assembly...
+HeatSolve: Assembly done
+       1 0.1373E-01
+       2 0.8582E-02
+       3 0.6850E-02
+       4 0.4700E-02
+       5 0.2283E-02
+       6 0.9475E-03
+       7 0.2972E-03
+       8 0.4398E-04
+       9 0.1655E-04
+      10 0.1093E-04
+      11 0.7377E-05
+      12 0.4640E-05
+      13 0.2026E-05
+      14 0.2710E-06
+      15 0.3593E-07
+      16 0.4051E-08
+      16 0.4051E-08
+ComputeChange: NS (ITER=2) (NRM,RELC): (  452.19261     0.25293975     ) :: heatsolver
+HeatSolve: iter:    2 Assembly: (s)    0.00    0.01
+HeatSolve: iter:    2 Solve:    (s)    0.00    0.00
+HeatSolve:  Result Norm   :    452.19260885405771
+HeatSolve:  Relative Change :   0.25293974877245412
+HeatSolve: 
+HeatSolve: 
+HeatSolve: -------------------------------------
+HeatSolve:  TEMPERATURE ITERATION           3
+HeatSolve: -------------------------------------
+HeatSolve: 
+HeatSolve: Starting Assembly...
+HeatSolve: Assembly done
+       1 0.4119E-02
+       2 0.2575E-02
+       3 0.2055E-02
+       4 0.1410E-02
+       5 0.6850E-03
+       6 0.2842E-03
+       7 0.8917E-04
+       8 0.1320E-04
+       9 0.4966E-05
+      10 0.3279E-05
+      11 0.2213E-05
+      12 0.1392E-05
+      13 0.6079E-06
+      14 0.8130E-07
+      15 0.1078E-07
+      16 0.1215E-08
+      16 0.1215E-08
+ComputeChange: NS (ITER=3) (NRM,RELC): (  482.78404     0.65437854E-01 ) :: heatsolver
+HeatSolve: iter:    3 Assembly: (s)    0.00    0.01
+HeatSolve: iter:    3 Solve:    (s)    0.00    0.00
+HeatSolve:  Result Norm   :    482.78404145970904
+HeatSolve:  Relative Change :    6.5437853652035527E-002
+HeatSolve: 
+HeatSolve: 
+HeatSolve: -------------------------------------
+HeatSolve:  TEMPERATURE ITERATION           4
+HeatSolve: -------------------------------------
+HeatSolve: 
+HeatSolve: Starting Assembly...
+HeatSolve: Assembly done
+       1 0.1236E-02
+       2 0.7724E-03
+       3 0.6165E-03
+       4 0.4230E-03
+       5 0.2055E-03
+       6 0.8527E-04
+       7 0.2675E-04
+       8 0.3958E-05
+       9 0.1490E-05
+      10 0.9836E-06
+      11 0.6639E-06
+      12 0.4176E-06
+      13 0.1824E-06
+      14 0.2439E-07
+      15 0.3234E-08
+      15 0.3234E-08
+ComputeChange: NS (ITER=4) (NRM,RELC): (  491.96984     0.18847419E-01 ) :: heatsolver
+HeatSolve: iter:    4 Assembly: (s)    0.00    0.02
+HeatSolve: iter:    4 Solve:    (s)    0.00    0.00
+HeatSolve:  Result Norm   :    491.96983905640263
+HeatSolve:  Relative Change :    1.8847419395406569E-002
+HeatSolve: 
+HeatSolve: 
+HeatSolve: -------------------------------------
+HeatSolve:  TEMPERATURE ITERATION           5
+HeatSolve: -------------------------------------
+HeatSolve: 
+HeatSolve: Starting Assembly...
+HeatSolve: Assembly done
+       1 0.3707E-03
+       2 0.2317E-03
+       3 0.1850E-03
+       4 0.1269E-03
+       5 0.6165E-04
+       6 0.2558E-04
+       7 0.8025E-05
+       8 0.1187E-05
+       9 0.4467E-06
+      10 0.2949E-06
+      11 0.1991E-06
+      12 0.1252E-06
+      13 0.5471E-07
+      14 0.7318E-08
+      14 0.7318E-08
+ComputeChange: NS (ITER=5) (NRM,RELC): (  494.72626     0.55871760E-02 ) :: heatsolver
+HeatSolve: iter:    5 Assembly: (s)    0.00    0.02
+HeatSolve: iter:    5 Solve:    (s)    0.00    0.00
+HeatSolve:  Result Norm   :    494.72626143156543
+HeatSolve:  Relative Change :    5.5871759780942018E-003
+HeatSolve: 
+HeatSolve: 
+HeatSolve: -------------------------------------
+HeatSolve:  TEMPERATURE ITERATION           6
+HeatSolve: -------------------------------------
+HeatSolve: 
+HeatSolve: Starting Assembly...
+HeatSolve: Assembly done
+       1 0.1112E-03
+       2 0.6952E-04
+       3 0.5549E-04
+       4 0.3807E-04
+       5 0.1849E-04
+       6 0.7674E-05
+       7 0.2407E-05
+       8 0.3558E-06
+       9 0.1335E-06
+      10 0.8821E-07
+      11 0.5956E-07
+      12 0.3749E-07
+      13 0.1641E-07
+      14 0.2199E-08
+      14 0.2199E-08
+ComputeChange: NS (ITER=6) (NRM,RELC): (  495.55326     0.16702229E-02 ) :: heatsolver
+HeatSolve: iter:    6 Assembly: (s)    0.01    0.03
+HeatSolve: iter:    6 Solve:    (s)    0.00    0.01
+HeatSolve:  Result Norm   :    495.55325517227334
+HeatSolve:  Relative Change :    1.6702228549451948E-003
+HeatSolve: 
+HeatSolve: 
+HeatSolve: -------------------------------------
+HeatSolve:  TEMPERATURE ITERATION           7
+HeatSolve: -------------------------------------
+HeatSolve: 
+HeatSolve: Starting Assembly...
+HeatSolve: Assembly done
+       1 0.3336E-04
+       2 0.2086E-04
+       3 0.1665E-04
+       4 0.1142E-04
+       5 0.5548E-05
+       6 0.2302E-05
+       7 0.7222E-06
+       8 0.1066E-06
+       9 0.3993E-07
+      10 0.2638E-07
+      11 0.1782E-07
+      12 0.1122E-07
+      13 0.4920E-08
+      13 0.4920E-08
+ComputeChange: NS (ITER=7) (NRM,RELC): (  495.80135     0.50052685E-03 ) :: heatsolver
+HeatSolve: iter:    7 Assembly: (s)    0.01    0.03
+HeatSolve: iter:    7 Solve:    (s)    0.00    0.01
+HeatSolve:  Result Norm   :    495.80135497214326
+HeatSolve:  Relative Change :    5.0052684948683965E-004
+HeatSolve: 
+HeatSolve: 
+HeatSolve: -------------------------------------
+HeatSolve:  TEMPERATURE ITERATION           8
+HeatSolve: -------------------------------------
+HeatSolve: 
+HeatSolve: Starting Assembly...
+HeatSolve: Assembly done
+       1 0.1001E-04
+       2 0.6257E-05
+       3 0.4994E-05
+       4 0.3426E-05
+       5 0.1664E-05
+       6 0.6907E-06
+       7 0.2166E-06
+       8 0.3168E-07
+       9 0.1167E-07
+      10 0.7725E-08
+      10 0.7725E-08
+ComputeChange: NS (ITER=8) (NRM,RELC): (  495.87578     0.15009491E-03 ) :: heatsolver
+HeatSolve: iter:    8 Assembly: (s)    0.00    0.03
+HeatSolve: iter:    8 Solve:    (s)    0.00    0.01
+HeatSolve:  Result Norm   :    495.87577781473180
+HeatSolve:  Relative Change :    1.5009490514195648E-004
+HeatSolve: 
+HeatSolve: 
+HeatSolve: -------------------------------------
+HeatSolve:  TEMPERATURE ITERATION           9
+HeatSolve: -------------------------------------
+HeatSolve: 
+HeatSolve: Starting Assembly...
+HeatSolve: Assembly done
+       1 0.3003E-05
+       2 0.1878E-05
+       3 0.1499E-05
+       4 0.1028E-05
+       5 0.4994E-06
+       6 0.2072E-06
+       7 0.6485E-07
+       8 0.9085E-08
+       8 0.9085E-08
+ComputeChange: NS (ITER=9) (NRM,RELC): (  495.89806     0.44929626E-04 ) :: heatsolver
+HeatSolve: iter:    9 Assembly: (s)    0.01    0.04
+HeatSolve: iter:    9 Solve:    (s)    0.00    0.01
+HeatSolve:  Result Norm   :    495.89805782865045
+HeatSolve:  Relative Change :    4.4929626327947300E-005
+HeatSolve: 
+HeatSolve: 
+HeatSolve: -------------------------------------
+HeatSolve:  TEMPERATURE ITERATION          10
+HeatSolve: -------------------------------------
+HeatSolve: 
+HeatSolve: Starting Assembly...
+HeatSolve: Assembly done
+       1 0.9025E-06
+       2 0.5660E-06
+       3 0.4520E-06
+       4 0.3091E-06
+       5 0.1490E-06
+       6 0.6159E-07
+       7 0.1932E-07
+       8 0.2557E-08
+       8 0.2557E-08
+ComputeChange: NS (ITER=10) (NRM,RELC): (  495.90479     0.13565858E-04 ) :: heatsolver
+HeatSolve: iter:   10 Assembly: (s)    0.00    0.04
+HeatSolve: iter:   10 Solve:    (s)    0.00    0.01
+HeatSolve:  Result Norm   :    495.90478515710834
+HeatSolve:  Relative Change :    1.3565858387000394E-005
+HeatSolve: 
+HeatSolve: 
+HeatSolve: -------------------------------------
+HeatSolve:  TEMPERATURE ITERATION          11
+HeatSolve: -------------------------------------
+HeatSolve: 
+HeatSolve: Starting Assembly...
+HeatSolve: Assembly done
+       1 0.2712E-06
+       2 0.1706E-06
+       3 0.1363E-06
+       4 0.9290E-07
+       5 0.4447E-07
+       6 0.1831E-07
+       7 0.5763E-08
+       7 0.5763E-08
+ComputeChange: NS (ITER=11) (NRM,RELC): (  495.90678     0.40166151E-05 ) :: heatsolver
+HeatSolve: iter:   11 Assembly: (s)    0.00    0.05
+HeatSolve: iter:   11 Solve:    (s)    0.00    0.01
+HeatSolve:  Result Norm   :    495.90677701975608
+HeatSolve:  Relative Change :    4.0166150984773134E-006
+HeatSolve: 
+HeatSolve: 
+HeatSolve: -------------------------------------
+HeatSolve:  TEMPERATURE ITERATION          12
+HeatSolve: -------------------------------------
+HeatSolve: 
+HeatSolve: Starting Assembly...
+HeatSolve: Assembly done
+       1 0.8255E-07
+       2 0.5318E-07
+       3 0.4260E-07
+       4 0.2823E-07
+       5 0.1276E-07
+       6 0.5139E-08
+       6 0.5139E-08
+ComputeChange: NS (ITER=12) (NRM,RELC): (  495.90738     0.12133880E-05 ) :: heatsolver
+HeatSolve: iter:   12 Assembly: (s)    0.01    0.05
+HeatSolve: iter:   12 Solve:    (s)    0.00    0.01
+HeatSolve:  Result Norm   :    495.90737874746088
+HeatSolve:  Relative Change :    1.2133880148928162E-006
+HeatSolve: 
+HeatSolve: 
+HeatSolve: -------------------------------------
+HeatSolve:  TEMPERATURE ITERATION          13
+HeatSolve: -------------------------------------
+HeatSolve: 
+HeatSolve: Starting Assembly...
+HeatSolve: Assembly done
+       1 0.2602E-07
+       2 0.1783E-07
+       3 0.1427E-07
+       4 0.8597E-08
+       4 0.8597E-08
+ComputeChange: NS (ITER=13) (NRM,RELC): (  495.90751     0.27203082E-06 ) :: heatsolver
+HeatSolve: iter:   13 Assembly: (s)    0.01    0.06
+HeatSolve: iter:   13 Solve:    (s)    0.00    0.01
+HeatSolve:  Result Norm   :    495.90751364957003
+HeatSolve:  Relative Change :    2.7203081983727242E-007
+ComputeChange: SS (ITER=1) (NRM,RELC): (  495.90751      2.0000000     ) :: heatsolver
+SteadyPhaseChange: --------------------------------------------
+SteadyPhaseChange: Using steady algorithm to find the isotherm
+SteadyPhaseChange: --------------------------------------------
+SteadyPhaseChange: Number of interface nodes:                  11
+SteadyPhaseChange: Number of interface elements:               10
+SteadyPhaseChange: Width of the interface              1.0000E+00
+SteadyPhaseChange: Index of the triple point:                   5
+SteadyPhaseChange: Index of the axis point:                     6
+SteadyPhaseChange: Body index for solid:                        3
+SteadyPhaseChange: Body index for liquid:                       2
+SteadyPhaseChange: Steady state isoterm formulation
+SteadyPhaseChange: Melting point found:                5.0500E+02
+SteadyPhaseChange: Number of isotherm segments:                50
+SteadyPhaseChange: Result Norm:                        1.6656E-01
+SteadyPhaseChange: Relative Change:                    1.0000E+00
+SteadyPhaseChange: Max Height:                         2.4048E-01
+SteadyPhaseChange: Max Change in Height:               2.4048E-01
+SteadyPhaseChange: Max Angle:                          2.4048E-01
+SteadyPhaseChange: Maximum temperature difference:     9.1821E+01
+ComputeChange: SS (ITER=1) (NRM,RELC): ( 0.16656231      2.0000000     ) :: steadyphasechange
+MeshSolve: 
+MeshSolve: -------------------------------------
+MeshSolve: MESH UPDATE SOLVER:
+MeshSolve: -------------------------------------
+MeshSolve: 
+MeshSolve: Starting assembly...
+MeshSolve: Assembly done
+MeshSolve: Set boundaries done
+       1 0.1477E-01
+       2 0.3189E-01
+       3 0.5427E-03
+       4 0.4894E-04
+       5 0.1561E-05
+       6 0.4014E-06
+       7 0.2958E-06
+       8 0.1599E-08
+       9 0.1674E-09
+       9 0.1674E-09
+ComputeChange: NS (ITER=1) (NRM,RELC): ( 0.64797629E-01  2.0000000     ) :: mesh update
+MeshSolve:  Result Norm   :    6.4797629210250771E-002
+MeshSolve:  Relative Change :    2.0000000000000000
+ComputeChange: SS (ITER=1) (NRM,RELC): ( 0.64797629E-01  2.0000000     ) :: mesh update
+ResultOutputSolver: -------------------------------------
+ResultOutputSolver: Saving with prefix: Case
+ResultOutputSolver: Creating list for saving - if not present
+CreateListForSaving: Field Variables for Saving
+ResultOutputSolver: Saving in unstructured VTK XML (.vtu) format
+VtuOutputSolver: Saving results in VTK XML format with prefix: case
+VtuOutputSolver: Saving number of partitions: 1
+ResultOutputSolver: -------------------------------------
+SaveResult: -----------------------------------------
+SaveResult: Saving results to file: ././case.result
+SaveResult: -----------------------------------------
+MAIN: 
+MAIN: -------------------------------------
+MAIN:  Steady state iteration:            2
+MAIN: -------------------------------------
+MAIN: 
+HeatSolve: 
+HeatSolve: 
+HeatSolve: -------------------------------------
+HeatSolve:  TEMPERATURE ITERATION           1
+HeatSolve: -------------------------------------
+HeatSolve: 
+HeatSolve: Starting Assembly...
+HeatSolve: Assembly done
+       1 0.2890E-02
+       2 0.1598E-02
+       3 0.1080E-02
+       4 0.8297E-03
+       5 0.5958E-03
+       6 0.2801E-03
+       7 0.1320E-03
+       8 0.9297E-04
+       9 0.6479E-04
+      10 0.4269E-04
+      11 0.1632E-04
+      12 0.4241E-05
+      13 0.8048E-06
+      14 0.7636E-07
+      15 0.4799E-08
+      15 0.4799E-08
+ComputeChange: NS (ITER=1) (NRM,RELC): (  512.00482     0.31941877E-01 ) :: heatsolver
+HeatSolve: iter:    1 Assembly: (s)    0.00    0.00
+HeatSolve: iter:    1 Solve:    (s)    0.00    0.00
+HeatSolve:  Result Norm   :    512.00481975105663
+HeatSolve:  Relative Change :    3.1941877419389031E-002
+HeatSolve: 
+HeatSolve: 
+HeatSolve: -------------------------------------
+HeatSolve:  TEMPERATURE ITERATION           2
+HeatSolve: -------------------------------------
+HeatSolve: 
+HeatSolve: Starting Assembly...
+HeatSolve: Assembly done
+       1 0.8669E-03
+       2 0.4794E-03
+       3 0.3240E-03
+       4 0.2489E-03
+       5 0.1787E-03
+       6 0.8403E-04
+       7 0.3960E-04
+       8 0.2789E-04
+       9 0.1944E-04
+      10 0.1281E-04
+      11 0.4895E-05
+      12 0.1272E-05
+      13 0.2414E-06
+      14 0.2291E-07
+      15 0.1440E-08
+      15 0.1440E-08
+ComputeChange: NS (ITER=2) (NRM,RELC): (  516.86823     0.94538636E-02 ) :: heatsolver
+HeatSolve: iter:    2 Assembly: (s)    0.00    0.01
+HeatSolve: iter:    2 Solve:    (s)    0.00    0.00
+HeatSolve:  Result Norm   :    516.86823251690851
+HeatSolve:  Relative Change :    9.4538636328969049E-003
+HeatSolve: 
+HeatSolve: 
+HeatSolve: -------------------------------------
+HeatSolve:  TEMPERATURE ITERATION           3
+HeatSolve: -------------------------------------
+HeatSolve: 
+HeatSolve: Starting Assembly...
+HeatSolve: Assembly done
+       1 0.2601E-03
+       2 0.1438E-03
+       3 0.9719E-04
+       4 0.7467E-04
+       5 0.5362E-04
+       6 0.2521E-04
+       7 0.1188E-04
+       8 0.8368E-05
+       9 0.5831E-05
+      10 0.3842E-05
+      11 0.1469E-05
+      12 0.3817E-06
+      13 0.7244E-07
+      14 0.6874E-08
+      14 0.6874E-08
+ComputeChange: NS (ITER=3) (NRM,RELC): (  518.33019     0.28245035E-02 ) :: heatsolver
+HeatSolve: iter:    3 Assembly: (s)    0.00    0.01
+HeatSolve: iter:    3 Solve:    (s)    0.00    0.00
+HeatSolve:  Result Norm   :    518.33019330145430
+HeatSolve:  Relative Change :    2.8245034924392594E-003
+HeatSolve: 
+HeatSolve: 
+HeatSolve: -------------------------------------
+HeatSolve:  TEMPERATURE ITERATION           4
+HeatSolve: -------------------------------------
+HeatSolve: 
+HeatSolve: Starting Assembly...
+HeatSolve: Assembly done
+       1 0.7802E-04
+       2 0.4315E-04
+       3 0.2916E-04
+       4 0.2240E-04
+       5 0.1609E-04
+       6 0.7562E-05
+       7 0.3563E-05
+       8 0.2510E-05
+       9 0.1749E-05
+      10 0.1153E-05
+      11 0.4409E-06
+      12 0.1146E-06
+      13 0.2176E-07
+      14 0.2065E-08
+      14 0.2065E-08
+ComputeChange: NS (ITER=4) (NRM,RELC): (  518.76905     0.84631774E-03 ) :: heatsolver
+HeatSolve: iter:    4 Assembly: (s)    0.01    0.02
+HeatSolve: iter:    4 Solve:    (s)    0.00    0.00
+HeatSolve:  Result Norm   :    518.76905104834236
+HeatSolve:  Relative Change :    8.4631774495834400E-004
+HeatSolve: 
+HeatSolve: 
+HeatSolve: -------------------------------------
+HeatSolve:  TEMPERATURE ITERATION           5
+HeatSolve: -------------------------------------
+HeatSolve: 
+HeatSolve: Starting Assembly...
+HeatSolve: Assembly done
+       1 0.2341E-04
+       2 0.1294E-04
+       3 0.8747E-05
+       4 0.6721E-05
+       5 0.4826E-05
+       6 0.2268E-05
+       7 0.1069E-05
+       8 0.7529E-06
+       9 0.5247E-06
+      10 0.3458E-06
+      11 0.1323E-06
+      12 0.3443E-07
+      13 0.6535E-08
+      13 0.6535E-08
+ComputeChange: NS (ITER=5) (NRM,RELC): (  518.90072     0.25378665E-03 ) :: heatsolver
+HeatSolve: iter:    5 Assembly: (s)    0.01    0.02
+HeatSolve: iter:    5 Solve:    (s)    0.00    0.00
+HeatSolve:  Result Norm   :    518.90072441450980
+HeatSolve:  Relative Change :    2.5378664635134152E-004
+HeatSolve: 
+HeatSolve: 
+HeatSolve: -------------------------------------
+HeatSolve:  TEMPERATURE ITERATION           6
+HeatSolve: -------------------------------------
+HeatSolve: 
+HeatSolve: Starting Assembly...
+HeatSolve: Assembly done
+       1 0.7021E-05
+       2 0.3883E-05
+       3 0.2624E-05
+       4 0.2016E-05
+       5 0.1448E-05
+       6 0.6802E-06
+       7 0.3201E-06
+       8 0.2256E-06
+       9 0.1572E-06
+      10 0.1037E-06
+      11 0.3998E-07
+      12 0.1044E-07
+      13 0.1986E-08
+      13 0.1986E-08
+ComputeChange: NS (ITER=6) (NRM,RELC): (  518.94024     0.76142001E-04 ) :: heatsolver
+HeatSolve: iter:    6 Assembly: (s)    0.01    0.03
+HeatSolve: iter:    6 Solve:    (s)    0.00    0.00
+HeatSolve:  Result Norm   :    518.94023605840789
+HeatSolve:  Relative Change :    7.6142001333403660E-005
+HeatSolve: 
+HeatSolve: 
+HeatSolve: -------------------------------------
+HeatSolve:  TEMPERATURE ITERATION           7
+HeatSolve: -------------------------------------
+HeatSolve: 
+HeatSolve: Starting Assembly...
+HeatSolve: Assembly done
+       1 0.2106E-05
+       2 0.1165E-05
+       3 0.7871E-06
+       4 0.6049E-06
+       5 0.4344E-06
+       6 0.2040E-06
+       7 0.9589E-07
+       8 0.6758E-07
+       9 0.4710E-07
+      10 0.3112E-07
+      11 0.1208E-07
+      12 0.3169E-08
+      12 0.3169E-08
+ComputeChange: NS (ITER=7) (NRM,RELC): (  518.95209     0.22838173E-04 ) :: heatsolver
+HeatSolve: iter:    7 Assembly: (s)    0.00    0.03
+HeatSolve: iter:    7 Solve:    (s)    0.00    0.00
+HeatSolve:  Result Norm   :    518.95208784084309
+HeatSolve:  Relative Change :    2.2838173406418972E-005
+HeatSolve: 
+HeatSolve: 
+HeatSolve: -------------------------------------
+HeatSolve:  TEMPERATURE ITERATION           8
+HeatSolve: -------------------------------------
+HeatSolve: 
+HeatSolve: Starting Assembly...
+HeatSolve: Assembly done
+       1 0.6316E-06
+       2 0.3492E-06
+       3 0.2361E-06
+       4 0.1815E-06
+       5 0.1304E-06
+       6 0.6104E-07
+       7 0.2853E-07
+       8 0.2014E-07
+       9 0.1404E-07
+      10 0.9339E-08
+      10 0.9339E-08
+ComputeChange: NS (ITER=8) (NRM,RELC): (  518.95563     0.68315087E-05 ) :: heatsolver
+HeatSolve: iter:    8 Assembly: (s)    0.01    0.04
+HeatSolve: iter:    8 Solve:    (s)    0.00    0.00
+HeatSolve:  Result Norm   :    518.95563307863551
+HeatSolve:  Relative Change :    6.8315086610633976E-006
+HeatSolve: 
+HeatSolve: 
+HeatSolve: -------------------------------------
+HeatSolve:  TEMPERATURE ITERATION           9
+HeatSolve: -------------------------------------
+HeatSolve: 
+HeatSolve: Starting Assembly...
+HeatSolve: Assembly done
+       1 0.1887E-06
+       2 0.1042E-06
+       3 0.7064E-07
+       4 0.5457E-07
+       5 0.3923E-07
+       6 0.1789E-07
+       7 0.7796E-08
+       7 0.7796E-08
+ComputeChange: NS (ITER=9) (NRM,RELC): (  518.95669     0.20291794E-05 ) :: heatsolver
+HeatSolve: iter:    9 Assembly: (s)    0.00    0.04
+HeatSolve: iter:    9 Solve:    (s)    0.00    0.00
+HeatSolve:  Result Norm   :    518.95668613378757
+HeatSolve:  Relative Change :    2.0291794067057060E-006
+HeatSolve: 
+HeatSolve: 
+HeatSolve: -------------------------------------
+HeatSolve:  TEMPERATURE ITERATION          10
+HeatSolve: -------------------------------------
+HeatSolve: 
+HeatSolve: Starting Assembly...
+HeatSolve: Assembly done
+       1 0.5661E-07
+       2 0.3157E-07
+       3 0.2174E-07
+       4 0.1691E-07
+       5 0.1207E-07
+       6 0.5184E-08
+       6 0.5184E-08
+ComputeChange: NS (ITER=10) (NRM,RELC): (  518.95698     0.57209323E-06 ) :: heatsolver
+HeatSolve: iter:   10 Assembly: (s)    0.00    0.04
+HeatSolve: iter:   10 Solve:    (s)    0.00    0.00
+HeatSolve:  Result Norm   :    518.95698302547737
+HeatSolve:  Relative Change :    5.7209322628988812E-007
+ComputeChange: SS (ITER=2) (NRM,RELC): (  518.95698     0.45423738E-01 ) :: heatsolver
+SteadyPhaseChange: --------------------------------------------
+SteadyPhaseChange: Using steady algorithm to find the isotherm
+SteadyPhaseChange: --------------------------------------------
+SteadyPhaseChange: Steady state isoterm formulation
+SteadyPhaseChange: Melting point found:                5.0500E+02
+SteadyPhaseChange: Number of isotherm segments:                46
+SteadyPhaseChange: Result Norm:                        3.2810E-01
+SteadyPhaseChange: Relative Change:                    5.1931E-01
+SteadyPhaseChange: Max Height:                         4.0250E-01
+SteadyPhaseChange: Max Change in Height:               1.9292E-01
+SteadyPhaseChange: Max Angle:                          4.0250E-01
+SteadyPhaseChange: Maximum temperature difference:     7.6382E+01
+ComputeChange: SS (ITER=2) (NRM,RELC): ( 0.32810126     0.65312653     ) :: steadyphasechange
+MeshSolve: 
+MeshSolve: -------------------------------------
+MeshSolve: MESH UPDATE SOLVER:
+MeshSolve: -------------------------------------
+MeshSolve: 
+MeshSolve: Starting assembly...
+MeshSolve: Assembly done
+MeshSolve: Set boundaries done
+       1 0.6974E-02
+       2 0.1771E-02
+       3 0.8764E-02
+       4 0.9849E-05
+       5 0.7008E-06
+       6 0.3685E-07
+       7 0.2625E-08
+       8 0.3007E-09
+       8 0.3007E-09
+ComputeChange: NS (ITER=1) (NRM,RELC): ( 0.13128931     0.67818569     ) :: mesh update
+MeshSolve:  Result Norm   :   0.13128930565837738
+MeshSolve:  Relative Change :   0.67818568832924897
+ComputeChange: SS (ITER=2) (NRM,RELC): ( 0.13128931     0.67818569     ) :: mesh update
+ResultOutputSolver: -------------------------------------
+ResultOutputSolver: Saving in unstructured VTK XML (.vtu) format
+ResultOutputSolver: -------------------------------------
+MAIN: 
+MAIN: -------------------------------------
+MAIN:  Steady state iteration:            3
+MAIN: -------------------------------------
+MAIN: 
+HeatSolve: 
+HeatSolve: 
+HeatSolve: -------------------------------------
+HeatSolve:  TEMPERATURE ITERATION           1
+HeatSolve: -------------------------------------
+HeatSolve: 
+HeatSolve: Starting Assembly...
+HeatSolve: Assembly done
+       1 0.2563E-02
+       2 0.1206E-02
+       3 0.7125E-03
+       4 0.4658E-03
+       5 0.2920E-03
+       6 0.1903E-03
+       7 0.1402E-03
+       8 0.9863E-04
+       9 0.6797E-04
+      10 0.2985E-04
+      11 0.5669E-05
+      12 0.9302E-06
+      13 0.1611E-06
+      14 0.2507E-07
+      15 0.3959E-08
+      15 0.3959E-08
+ComputeChange: NS (ITER=1) (NRM,RELC): (  522.59882     0.69930645E-02 ) :: heatsolver
+HeatSolve: iter:    1 Assembly: (s)    0.00    0.00
+HeatSolve: iter:    1 Solve:    (s)    0.00    0.00
+HeatSolve:  Result Norm   :    522.59881645526093
+HeatSolve:  Relative Change :    6.9930644745085681E-003
+HeatSolve: 
+HeatSolve: 
+HeatSolve: -------------------------------------
+HeatSolve:  TEMPERATURE ITERATION           2
+HeatSolve: -------------------------------------
+HeatSolve: 
+HeatSolve: Starting Assembly...
+HeatSolve: Assembly done
+       1 0.7690E-03
+       2 0.3619E-03
+       3 0.2138E-03
+       4 0.1397E-03
+       5 0.8760E-04
+       6 0.5708E-04
+       7 0.4206E-04
+       8 0.2959E-04
+       9 0.2039E-04
+      10 0.8955E-05
+      11 0.1701E-05
+      12 0.2791E-06
+      13 0.4833E-07
+      14 0.7522E-08
+      14 0.7522E-08
+ComputeChange: NS (ITER=2) (NRM,RELC): (  523.73882     0.21790306E-02 ) :: heatsolver
+HeatSolve: iter:    2 Assembly: (s)    0.01    0.01
+HeatSolve: iter:    2 Solve:    (s)    0.00    0.00
+HeatSolve:  Result Norm   :    523.73881731143695
+HeatSolve:  Relative Change :    2.1790305908660499E-003
+HeatSolve: 
+HeatSolve: 
+HeatSolve: -------------------------------------
+HeatSolve:  TEMPERATURE ITERATION           3
+HeatSolve: -------------------------------------
+HeatSolve: 
+HeatSolve: Starting Assembly...
+HeatSolve: Assembly done
+       1 0.2307E-03
+       2 0.1086E-03
+       3 0.6413E-04
+       4 0.4192E-04
+       5 0.2628E-04
+       6 0.1713E-04
+       7 0.1262E-04
+       8 0.8877E-05
+       9 0.6118E-05
+      10 0.2687E-05
+      11 0.5102E-06
+      12 0.8372E-07
+      13 0.1450E-07
+      14 0.2257E-08
+      14 0.2257E-08
+ComputeChange: NS (ITER=3) (NRM,RELC): (  524.08509     0.66093629E-03 ) :: heatsolver
+HeatSolve: iter:    3 Assembly: (s)    0.00    0.01
+HeatSolve: iter:    3 Solve:    (s)    0.00    0.00
+HeatSolve:  Result Norm   :    524.08508973456196
+HeatSolve:  Relative Change :    6.6093629052846900E-004
+HeatSolve: 
+HeatSolve: 
+HeatSolve: -------------------------------------
+HeatSolve:  TEMPERATURE ITERATION           4
+HeatSolve: -------------------------------------
+HeatSolve: 
+HeatSolve: Starting Assembly...
+HeatSolve: Assembly done
+       1 0.6921E-04
+       2 0.3257E-04
+       3 0.1924E-04
+       4 0.1258E-04
+       5 0.7885E-05
+       6 0.5138E-05
+       7 0.3786E-05
+       8 0.2663E-05
+       9 0.1835E-05
+      10 0.8060E-06
+      11 0.1531E-06
+      12 0.2512E-07
+      13 0.4350E-08
+      13 0.4350E-08
+ComputeChange: NS (ITER=4) (NRM,RELC): (  524.18934     0.19889043E-03 ) :: heatsolver
+HeatSolve: iter:    4 Assembly: (s)    0.00    0.02
+HeatSolve: iter:    4 Solve:    (s)    0.00    0.00
+HeatSolve:  Result Norm   :    524.18933561242454
+HeatSolve:  Relative Change :    1.9889043430221107E-004
+HeatSolve: 
+HeatSolve: 
+HeatSolve: -------------------------------------
+HeatSolve:  TEMPERATURE ITERATION           5
+HeatSolve: -------------------------------------
+HeatSolve: 
+HeatSolve: Starting Assembly...
+HeatSolve: Assembly done
+       1 0.2076E-04
+       2 0.9772E-05
+       3 0.5772E-05
+       4 0.3774E-05
+       5 0.2366E-05
+       6 0.1542E-05
+       7 0.1136E-05
+       8 0.7992E-06
+       9 0.5507E-06
+      10 0.2418E-06
+      11 0.4592E-07
+      12 0.7536E-08
+      12 0.7536E-08
+ComputeChange: NS (ITER=5) (NRM,RELC): (  524.22062     0.59673656E-04 ) :: heatsolver
+HeatSolve: iter:    5 Assembly: (s)    0.00    0.02
+HeatSolve: iter:    5 Solve:    (s)    0.00    0.00
+HeatSolve:  Result Norm   :    524.22061684002824
+HeatSolve:  Relative Change :    5.9673656341254535E-005
+HeatSolve: 
+HeatSolve: 
+HeatSolve: -------------------------------------
+HeatSolve:  TEMPERATURE ITERATION           6
+HeatSolve: -------------------------------------
+HeatSolve: 
+HeatSolve: Starting Assembly...
+HeatSolve: Assembly done
+       1 0.6229E-05
+       2 0.2931E-05
+       3 0.1732E-05
+       4 0.1133E-05
+       5 0.7108E-06
+       6 0.4634E-06
+       7 0.3415E-06
+       8 0.2401E-06
+       9 0.1654E-06
+      10 0.7260E-07
+      11 0.1378E-07
+      12 0.2262E-08
+      12 0.2262E-08
+ComputeChange: NS (ITER=6) (NRM,RELC): (  524.23005     0.17987240E-04 ) :: heatsolver
+HeatSolve: iter:    6 Assembly: (s)    0.01    0.03
+HeatSolve: iter:    6 Solve:    (s)    0.00    0.00
+HeatSolve:  Result Norm   :    524.23004620687652
+HeatSolve:  Relative Change :    1.7987239992538797E-005
+HeatSolve: 
+HeatSolve: 
+HeatSolve: -------------------------------------
+HeatSolve:  TEMPERATURE ITERATION           7
+HeatSolve: -------------------------------------
+HeatSolve: 
+HeatSolve: Starting Assembly...
+HeatSolve: Assembly done
+       1 0.1868E-05
+       2 0.8794E-06
+       3 0.5198E-06
+       4 0.3402E-06
+       5 0.2135E-06
+       6 0.1393E-06
+       7 0.1026E-06
+       8 0.7213E-07
+       9 0.4968E-07
+      10 0.2180E-07
+      11 0.4138E-08
+      11 0.4138E-08
+ComputeChange: NS (ITER=7) (NRM,RELC): (  524.23286     0.53698192E-05 ) :: heatsolver
+HeatSolve: iter:    7 Assembly: (s)    0.01    0.03
+HeatSolve: iter:    7 Solve:    (s)    0.00    0.00
+HeatSolve:  Result Norm   :    524.23286123501589
+HeatSolve:  Relative Change :    5.3698192265755825E-006
+HeatSolve: 
+HeatSolve: 
+HeatSolve: -------------------------------------
+HeatSolve:  TEMPERATURE ITERATION           8
+HeatSolve: -------------------------------------
+HeatSolve: 
+HeatSolve: Starting Assembly...
+HeatSolve: Assembly done
+       1 0.5602E-06
+       2 0.2638E-06
+       3 0.1563E-06
+       4 0.1026E-06
+       5 0.6458E-07
+       6 0.4223E-07
+       7 0.3109E-07
+       8 0.2180E-07
+       9 0.1499E-07
+      10 0.6556E-08
+      10 0.6556E-08
+ComputeChange: NS (ITER=8) (NRM,RELC): (  524.23369     0.15720247E-05 ) :: heatsolver
+HeatSolve: iter:    8 Assembly: (s)    0.01    0.04
+HeatSolve: iter:    8 Solve:    (s)    0.00    0.00
+HeatSolve:  Result Norm   :    524.23368534266365
+HeatSolve:  Relative Change :    1.5720246877668173E-006
+HeatSolve: 
+HeatSolve: 
+HeatSolve: -------------------------------------
+HeatSolve:  TEMPERATURE ITERATION           9
+HeatSolve: -------------------------------------
+HeatSolve: 
+HeatSolve: Starting Assembly...
+HeatSolve: Assembly done
+       1 0.1676E-06
+       2 0.7915E-07
+       3 0.4746E-07
+       4 0.3165E-07
+       5 0.2024E-07
+       6 0.1337E-07
+       7 0.9812E-08
+       7 0.9812E-08
+ComputeChange: NS (ITER=9) (NRM,RELC): (  524.23390     0.41353095E-06 ) :: heatsolver
+HeatSolve: iter:    9 Assembly: (s)    0.01    0.04
+HeatSolve: iter:    9 Solve:    (s)    0.00    0.00
+HeatSolve:  Result Norm   :    524.23390212955985
+HeatSolve:  Relative Change :    4.1353094515007286E-007
+ComputeChange: SS (ITER=3) (NRM,RELC): (  524.23390     0.10116881E-01 ) :: heatsolver
+SteadyPhaseChange: --------------------------------------------
+SteadyPhaseChange: Using steady algorithm to find the isotherm
+SteadyPhaseChange: --------------------------------------------
+SteadyPhaseChange: Steady state isoterm formulation
+SteadyPhaseChange: Melting point found:                5.0500E+02
+SteadyPhaseChange: Number of isotherm segments:                44
+SteadyPhaseChange: Result Norm:                        3.8778E-01
+SteadyPhaseChange: Relative Change:                    1.5444E-01
+SteadyPhaseChange: Max Height:                         4.8736E-01
+SteadyPhaseChange: Max Change in Height:               8.4856E-02
+SteadyPhaseChange: Max Angle:                          4.8736E-01
+SteadyPhaseChange: Maximum temperature difference:     4.7662E+01
+ComputeChange: SS (ITER=3) (NRM,RELC): ( 0.38778315     0.16673611     ) :: steadyphasechange
+MeshSolve: 
+MeshSolve: -------------------------------------
+MeshSolve: MESH UPDATE SOLVER:
+MeshSolve: -------------------------------------
+MeshSolve: 
+MeshSolve: Starting assembly...
+MeshSolve: Assembly done
+MeshSolve: Set boundaries done
+       1 0.2245E-02
+       2 0.6019E-03
+       3 0.1558E-03
+       4 0.8121E-05
+       5 0.3778E-06
+       6 0.3111E-07
+       7 0.2136E-07
+       8 0.2455E-09
+       8 0.2455E-09
+ComputeChange: NS (ITER=1) (NRM,RELC): ( 0.15490549     0.16503574     ) :: mesh update
+MeshSolve:  Result Norm   :   0.15490549046091370
+MeshSolve:  Relative Change :   0.16503573875391278
+ComputeChange: SS (ITER=3) (NRM,RELC): ( 0.15490549     0.16503574     ) :: mesh update
+ResultOutputSolver: -------------------------------------
+ResultOutputSolver: Saving in unstructured VTK XML (.vtu) format
+ResultOutputSolver: -------------------------------------
+MAIN: 
+MAIN: -------------------------------------
+MAIN:  Steady state iteration:            4
+MAIN: -------------------------------------
+MAIN: 
+HeatSolve: 
+HeatSolve: 
+HeatSolve: -------------------------------------
+HeatSolve:  TEMPERATURE ITERATION           1
+HeatSolve: -------------------------------------
+HeatSolve: 
+HeatSolve: Starting Assembly...
+HeatSolve: Assembly done
+       1 0.1115E-02
+       2 0.5987E-03
+       3 0.3277E-03
+       4 0.2275E-03
+       5 0.1717E-03
+       6 0.9375E-04
+       7 0.7408E-04
+       8 0.5239E-04
+       9 0.1384E-04
+      10 0.5652E-05
+      11 0.3628E-05
+      12 0.1973E-06
+      13 0.2079E-07
+      14 0.2618E-08
+      14 0.2618E-08
+ComputeChange: NS (ITER=1) (NRM,RELC): (  527.24120     0.57201567E-02 ) :: heatsolver
+HeatSolve: iter:    1 Assembly: (s)    0.00    0.00
+HeatSolve: iter:    1 Solve:    (s)    0.00    0.00
+HeatSolve:  Result Norm   :    527.24120330141068
+HeatSolve:  Relative Change :    5.7201566757364508E-003
+HeatSolve: 
+HeatSolve: 
+HeatSolve: -------------------------------------
+HeatSolve:  TEMPERATURE ITERATION           2
+HeatSolve: -------------------------------------
+HeatSolve: 
+HeatSolve: Starting Assembly...
+HeatSolve: Assembly done
+       1 0.3344E-03
+       2 0.1796E-03
+       3 0.9831E-04
+       4 0.6826E-04
+       5 0.5152E-04
+       6 0.2813E-04
+       7 0.2222E-04
+       8 0.1572E-04
+       9 0.4153E-05
+      10 0.1696E-05
+      11 0.1088E-05
+      12 0.5920E-07
+      13 0.6238E-08
+      13 0.6238E-08
+ComputeChange: NS (ITER=2) (NRM,RELC): (  528.14981     0.17218339E-02 ) :: heatsolver
+HeatSolve: iter:    2 Assembly: (s)    0.00    0.01
+HeatSolve: iter:    2 Solve:    (s)    0.00    0.00
+HeatSolve:  Result Norm   :    528.14980732654840
+HeatSolve:  Relative Change :    1.7218339288243498E-003
+HeatSolve: 
+HeatSolve: 
+HeatSolve: -------------------------------------
+HeatSolve:  TEMPERATURE ITERATION           3
+HeatSolve: -------------------------------------
+HeatSolve: 
+HeatSolve: Starting Assembly...
+HeatSolve: Assembly done
+       1 0.1003E-03
+       2 0.5389E-04
+       3 0.2949E-04
+       4 0.2048E-04
+       5 0.1546E-04
+       6 0.8438E-05
+       7 0.6667E-05
+       8 0.4715E-05
+       9 0.1247E-05
+      10 0.5089E-06
+      11 0.3269E-06
+      12 0.1777E-07
+      13 0.1872E-08
+      13 0.1872E-08
+ComputeChange: NS (ITER=3) (NRM,RELC): (  528.42298     0.51709049E-03 ) :: heatsolver
+HeatSolve: iter:    3 Assembly: (s)    0.01    0.01
+HeatSolve: iter:    3 Solve:    (s)    0.00    0.00
+HeatSolve:  Result Norm   :    528.42297919720818
+HeatSolve:  Relative Change :    5.1709049133954424E-004
+HeatSolve: 
+HeatSolve: 
+HeatSolve: -------------------------------------
+HeatSolve:  TEMPERATURE ITERATION           4
+HeatSolve: -------------------------------------
+HeatSolve: 
+HeatSolve: Starting Assembly...
+HeatSolve: Assembly done
+       1 0.3010E-04
+       2 0.1617E-04
+       3 0.8849E-05
+       4 0.6144E-05
+       5 0.4637E-05
+       6 0.2531E-05
+       7 0.2000E-05
+       8 0.1415E-05
+       9 0.3743E-06
+      10 0.1528E-06
+      11 0.9818E-07
+      12 0.5337E-08
+      12 0.5337E-08
+ComputeChange: NS (ITER=4) (NRM,RELC): (  528.50496     0.15513581E-03 ) :: heatsolver
+HeatSolve: iter:    4 Assembly: (s)    0.00    0.02
+HeatSolve: iter:    4 Solve:    (s)    0.00    0.00
+HeatSolve:  Result Norm   :    528.50496288448846
+HeatSolve:  Relative Change :    1.5513581203807032E-004
+HeatSolve: 
+HeatSolve: 
+HeatSolve: -------------------------------------
+HeatSolve:  TEMPERATURE ITERATION           5
+HeatSolve: -------------------------------------
+HeatSolve: 
+HeatSolve: Starting Assembly...
+HeatSolve: Assembly done
+       1 0.9031E-05
+       2 0.4851E-05
+       3 0.2656E-05
+       4 0.1844E-05
+       5 0.1392E-05
+       6 0.7599E-06
+       7 0.6005E-06
+       8 0.4247E-06
+       9 0.1134E-06
+      10 0.4625E-07
+      11 0.3006E-07
+      12 0.1625E-08
+      12 0.1625E-08
+ComputeChange: NS (ITER=5) (NRM,RELC): (  528.52958     0.46579618E-04 ) :: heatsolver
+HeatSolve: iter:    5 Assembly: (s)    0.01    0.02
+HeatSolve: iter:    5 Solve:    (s)    0.00    0.00
+HeatSolve:  Result Norm   :    528.52958101711238
+HeatSolve:  Relative Change :    4.6579617981161411E-005
+HeatSolve: 
+HeatSolve: 
+HeatSolve: -------------------------------------
+HeatSolve:  TEMPERATURE ITERATION           6
+HeatSolve: -------------------------------------
+HeatSolve: 
+HeatSolve: Starting Assembly...
+HeatSolve: Assembly done
+       1 0.2710E-05
+       2 0.1456E-05
+       3 0.7971E-06
+       4 0.5536E-06
+       5 0.4177E-06
+       6 0.2281E-06
+       7 0.1803E-06
+       8 0.1275E-06
+       9 0.3436E-07
+      10 0.1401E-07
+      11 0.9212E-08
+      11 0.9212E-08
+ComputeChange: NS (ITER=6) (NRM,RELC): (  528.53693     0.13902119E-04 ) :: heatsolver
+HeatSolve: iter:    6 Assembly: (s)    0.00    0.03
+HeatSolve: iter:    6 Solve:    (s)    0.00    0.00
+HeatSolve:  Result Norm   :    528.53692874909723
+HeatSolve:  Relative Change :    1.3902118583769752E-005
+HeatSolve: 
+HeatSolve: 
+HeatSolve: -------------------------------------
+HeatSolve:  TEMPERATURE ITERATION           7
+HeatSolve: -------------------------------------
+HeatSolve: 
+HeatSolve: Starting Assembly...
+HeatSolve: Assembly done
+       1 0.8149E-06
+       2 0.4391E-06
+       3 0.2414E-06
+       4 0.1680E-06
+       5 0.1265E-06
+       6 0.6919E-07
+       7 0.5483E-07
+       8 0.3889E-07
+       9 0.1253E-07
+      10 0.5327E-08
+      10 0.5327E-08
+ComputeChange: NS (ITER=7) (NRM,RELC): (  528.53920     0.42883723E-05 ) :: heatsolver
+HeatSolve: iter:    7 Assembly: (s)    0.00    0.03
+HeatSolve: iter:    7 Solve:    (s)    0.00    0.00
+HeatSolve:  Result Norm   :    528.53919531705799
+HeatSolve:  Relative Change :    4.2883722546702960E-006
+HeatSolve: 
+HeatSolve: 
+HeatSolve: -------------------------------------
+HeatSolve:  TEMPERATURE ITERATION           8
+HeatSolve: -------------------------------------
+HeatSolve: 
+HeatSolve: Starting Assembly...
+HeatSolve: Assembly done
+       1 0.2433E-06
+       2 0.1305E-06
+       3 0.7131E-07
+       4 0.4954E-07
+       5 0.3746E-07
+       6 0.2037E-07
+       7 0.1607E-07
+       8 0.1136E-07
+       9 0.2332E-08
+       9 0.2332E-08
+ComputeChange: NS (ITER=8) (NRM,RELC): (  528.53987     0.12704286E-05 ) :: heatsolver
+HeatSolve: iter:    8 Assembly: (s)    0.01    0.04
+HeatSolve: iter:    8 Solve:    (s)    0.00    0.00
+HeatSolve:  Result Norm   :    528.53986678877584
+HeatSolve:  Relative Change :    1.2704285647535866E-006
+HeatSolve: 
+HeatSolve: 
+HeatSolve: -------------------------------------
+HeatSolve:  TEMPERATURE ITERATION           9
+HeatSolve: -------------------------------------
+HeatSolve: 
+HeatSolve: Starting Assembly...
+HeatSolve: Assembly done
+       1 0.7281E-07
+       2 0.3888E-07
+       3 0.2112E-07
+       4 0.1461E-07
+       5 0.1107E-07
+       6 0.6026E-08
+       6 0.6026E-08
+ComputeChange: NS (ITER=9) (NRM,RELC): (  528.54001     0.26758974E-06 ) :: heatsolver
+HeatSolve: iter:    9 Assembly: (s)    0.01    0.04
+HeatSolve: iter:    9 Solve:    (s)    0.00    0.00
+HeatSolve:  Result Norm   :    528.54000822063949
+HeatSolve:  Relative Change :    2.6758973848062712E-007
+ComputeChange: SS (ITER=4) (NRM,RELC): (  528.54001     0.81804954E-02 ) :: heatsolver
+SteadyPhaseChange: --------------------------------------------
+SteadyPhaseChange: Using steady algorithm to find the isotherm
+SteadyPhaseChange: --------------------------------------------
+SteadyPhaseChange: Steady state isoterm formulation
+SteadyPhaseChange: Melting point found:                5.0500E+02
+SteadyPhaseChange: Number of isotherm segments:                44
+SteadyPhaseChange: Result Norm:                        4.2275E-01
+SteadyPhaseChange: Relative Change:                    8.3478E-02
+SteadyPhaseChange: Max Height:                         5.3173E-01
+SteadyPhaseChange: Max Change in Height:               4.4374E-02
+SteadyPhaseChange: Max Angle:                          5.3173E-01
+SteadyPhaseChange: Maximum temperature difference:     2.7848E+01
+ComputeChange: SS (ITER=4) (NRM,RELC): ( 0.42275474     0.86292298E-01 ) :: steadyphasechange
+MeshSolve: 
+MeshSolve: -------------------------------------
+MeshSolve: MESH UPDATE SOLVER:
+MeshSolve: -------------------------------------
+MeshSolve: 
+MeshSolve: Starting assembly...
+MeshSolve: Assembly done
+MeshSolve: Set boundaries done
+       1 0.1161E-02
+       2 0.4366E-03
+       3 0.2546E-04
+       4 0.8148E-05
+       5 0.1144E-06
+       6 0.5275E-08
+       7 0.4951E-09
+       7 0.4951E-09
+ComputeChange: NS (ITER=1) (NRM,RELC): ( 0.16889662     0.86417753E-01 ) :: mesh update
+MeshSolve:  Result Norm   :   0.16889661567394790
+MeshSolve:  Relative Change :    8.6417752991433450E-002
+ComputeChange: SS (ITER=4) (NRM,RELC): ( 0.16889662     0.86417753E-01 ) :: mesh update
+ResultOutputSolver: -------------------------------------
+ResultOutputSolver: Saving in unstructured VTK XML (.vtu) format
+ResultOutputSolver: -------------------------------------
+MAIN: 
+MAIN: -------------------------------------
+MAIN:  Steady state iteration:            5
+MAIN: -------------------------------------
+MAIN: 
+HeatSolve: 
+HeatSolve: 
+HeatSolve: -------------------------------------
+HeatSolve:  TEMPERATURE ITERATION           1
+HeatSolve: -------------------------------------
+HeatSolve: 
+HeatSolve: Starting Assembly...
+HeatSolve: Assembly done
+       1 0.6382E-03
+       2 0.3421E-03
+       3 0.1727E-03
+       4 0.1122E-03
+       5 0.7922E-04
+       6 0.4803E-04
+       7 0.3547E-04
+       8 0.2614E-04
+       9 0.1360E-04
+      10 0.6049E-05
+      11 0.1428E-05
+      12 0.1169E-06
+      13 0.1764E-07
+      14 0.3179E-08
+      14 0.3179E-08
+ComputeChange: NS (ITER=1) (NRM,RELC): (  529.47161     0.17610429E-02 ) :: heatsolver
+HeatSolve: iter:    1 Assembly: (s)    0.01    0.01
+HeatSolve: iter:    1 Solve:    (s)    0.00    0.00
+HeatSolve:  Result Norm   :    529.47161012891308
+HeatSolve:  Relative Change :    1.7610428696933336E-003
+HeatSolve: 
+HeatSolve: 
+HeatSolve: -------------------------------------
+HeatSolve:  TEMPERATURE ITERATION           2
+HeatSolve: -------------------------------------
+HeatSolve: 
+HeatSolve: Starting Assembly...
+HeatSolve: Assembly done
+       1 0.1915E-03
+       2 0.1026E-03
+       3 0.5182E-04
+       4 0.3367E-04
+       5 0.2377E-04
+       6 0.1441E-04
+       7 0.1064E-04
+       8 0.7841E-05
+       9 0.4079E-05
+      10 0.1815E-05
+      11 0.4283E-06
+      12 0.3507E-07
+      13 0.5291E-08
+      13 0.5291E-08
+ComputeChange: NS (ITER=2) (NRM,RELC): (  529.75354     0.53232455E-03 ) :: heatsolver
+HeatSolve: iter:    2 Assembly: (s)    0.01    0.01
+HeatSolve: iter:    2 Solve:    (s)    0.00    0.00
+HeatSolve:  Result Norm   :    529.75353590496582
+HeatSolve:  Relative Change :    5.3232455273246216E-004
+HeatSolve: 
+HeatSolve: 
+HeatSolve: -------------------------------------
+HeatSolve:  TEMPERATURE ITERATION           3
+HeatSolve: -------------------------------------
+HeatSolve: 
+HeatSolve: Starting Assembly...
+HeatSolve: Assembly done
+       1 0.5744E-04
+       2 0.3079E-04
+       3 0.1555E-04
+       4 0.1010E-04
+       5 0.7131E-05
+       6 0.4324E-05
+       7 0.3193E-05
+       8 0.2353E-05
+       9 0.1224E-05
+      10 0.5444E-06
+      11 0.1285E-06
+      12 0.1052E-07
+      13 0.1588E-08
+      13 0.1588E-08
+ComputeChange: NS (ITER=3) (NRM,RELC): (  529.83836     0.16010558E-03 ) :: heatsolver
+HeatSolve: iter:    3 Assembly: (s)    0.00    0.01
+HeatSolve: iter:    3 Solve:    (s)    0.00    0.00
+HeatSolve:  Result Norm   :    529.83835919287139
+HeatSolve:  Relative Change :    1.6010558083354620E-004
+HeatSolve: 
+HeatSolve: 
+HeatSolve: -------------------------------------
+HeatSolve:  TEMPERATURE ITERATION           4
+HeatSolve: -------------------------------------
+HeatSolve: 
+HeatSolve: Starting Assembly...
+HeatSolve: Assembly done
+       1 0.1723E-04
+       2 0.9236E-05
+       3 0.4664E-05
+       4 0.3031E-05
+       5 0.2139E-05
+       6 0.1297E-05
+       7 0.9579E-06
+       8 0.7058E-06
+       9 0.3672E-06
+      10 0.1633E-06
+      11 0.3857E-07
+      12 0.3158E-08
+      12 0.3158E-08
+ComputeChange: NS (ITER=4) (NRM,RELC): (  529.86381     0.48042862E-04 ) :: heatsolver
+HeatSolve: iter:    4 Assembly: (s)    0.00    0.02
+HeatSolve: iter:    4 Solve:    (s)    0.00    0.00
+HeatSolve:  Result Norm   :    529.86381475576741
+HeatSolve:  Relative Change :    4.8042862460423966E-005
+HeatSolve: 
+HeatSolve: 
+HeatSolve: -------------------------------------
+HeatSolve:  TEMPERATURE ITERATION           5
+HeatSolve: -------------------------------------
+HeatSolve: 
+HeatSolve: Starting Assembly...
+HeatSolve: Assembly done
+       1 0.5169E-05
+       2 0.2771E-05
+       3 0.1399E-05
+       4 0.9096E-06
+       5 0.6422E-06
+       6 0.3894E-06
+       7 0.2875E-06
+       8 0.2119E-06
+       9 0.1102E-06
+      10 0.4902E-07
+      11 0.1159E-07
+      12 0.9500E-09
+      12 0.9500E-09
+ComputeChange: NS (ITER=5) (NRM,RELC): (  529.87147     0.14444693E-04 ) :: heatsolver
+HeatSolve: iter:    5 Assembly: (s)    0.00    0.02
+HeatSolve: iter:    5 Solve:    (s)    0.00    0.00
+HeatSolve:  Result Norm   :    529.87146853098420
+HeatSolve:  Relative Change :    1.4444692627496656E-005
+HeatSolve: 
+HeatSolve: 
+HeatSolve: -------------------------------------
+HeatSolve:  TEMPERATURE ITERATION           6
+HeatSolve: -------------------------------------
+HeatSolve: 
+HeatSolve: Starting Assembly...
+HeatSolve: Assembly done
+       1 0.1551E-05
+       2 0.8311E-06
+       3 0.4199E-06
+       4 0.2730E-06
+       5 0.1928E-06
+       6 0.1169E-06
+       7 0.8631E-07
+       8 0.6359E-07
+       9 0.3307E-07
+      10 0.1471E-07
+      11 0.3484E-08
+      11 0.3484E-08
+ComputeChange: NS (ITER=6) (NRM,RELC): (  529.87375     0.43050408E-05 ) :: heatsolver
+HeatSolve: iter:    6 Assembly: (s)    0.01    0.03
+HeatSolve: iter:    6 Solve:    (s)    0.00    0.00
+HeatSolve:  Result Norm   :    529.87374965420543
+HeatSolve:  Relative Change :    4.3050408382683548E-006
+HeatSolve: 
+HeatSolve: 
+HeatSolve: -------------------------------------
+HeatSolve:  TEMPERATURE ITERATION           7
+HeatSolve: -------------------------------------
+HeatSolve: 
+HeatSolve: Starting Assembly...
+HeatSolve: Assembly done
+       1 0.4650E-06
+       2 0.2493E-06
+       3 0.1262E-06
+       4 0.8228E-07
+       5 0.5823E-07
+       6 0.3531E-07
+       7 0.2606E-07
+       8 0.1920E-07
+       9 0.9968E-08
+       9 0.9968E-08
+ComputeChange: NS (ITER=7) (NRM,RELC): (  529.87441     0.12416376E-05 ) :: heatsolver
+HeatSolve: iter:    7 Assembly: (s)    0.01    0.03
+HeatSolve: iter:    7 Solve:    (s)    0.00    0.00
+HeatSolve:  Result Norm   :    529.87440756579474
+HeatSolve:  Relative Change :    1.2416376189612528E-006
+HeatSolve: 
+HeatSolve: 
+HeatSolve: -------------------------------------
+HeatSolve:  TEMPERATURE ITERATION           8
+HeatSolve: -------------------------------------
+HeatSolve: 
+HeatSolve: Starting Assembly...
+HeatSolve: Assembly done
+       1 0.1390E-06
+       2 0.7464E-07
+       3 0.3830E-07
+       4 0.2554E-07
+       5 0.1833E-07
+       6 0.1107E-07
+       7 0.8134E-08
+       7 0.8134E-08
+ComputeChange: NS (ITER=8) (NRM,RELC): (  529.87460     0.35564126E-06 ) :: heatsolver
+HeatSolve: iter:    8 Assembly: (s)    0.00    0.04
+HeatSolve: iter:    8 Solve:    (s)    0.00    0.00
+HeatSolve:  Result Norm   :    529.87459601102989
+HeatSolve:  Relative Change :    3.5564125942507908E-007
+ComputeChange: SS (ITER=5) (NRM,RELC): (  529.87460     0.25218620E-02 ) :: heatsolver
+SteadyPhaseChange: --------------------------------------------
+SteadyPhaseChange: Using steady algorithm to find the isotherm
+SteadyPhaseChange: --------------------------------------------
+SteadyPhaseChange: Steady state isoterm formulation
+SteadyPhaseChange: Melting point found:                5.0500E+02
+SteadyPhaseChange: Number of isotherm segments:                42
+SteadyPhaseChange: Result Norm:                        4.3748E-01
+SteadyPhaseChange: Relative Change:                    3.3896E-02
+SteadyPhaseChange: Max Height:                         5.5557E-01
+SteadyPhaseChange: Max Change in Height:               2.3838E-02
+SteadyPhaseChange: Max Angle:                          5.5557E-01
+SteadyPhaseChange: Maximum temperature difference:     1.5574E+01
+ComputeChange: SS (ITER=5) (NRM,RELC): ( 0.43747907     0.34233320E-01 ) :: steadyphasechange
+MeshSolve: 
+MeshSolve: -------------------------------------
+MeshSolve: MESH UPDATE SOLVER:
+MeshSolve: -------------------------------------
+MeshSolve: 
+MeshSolve: Starting assembly...
+MeshSolve: Assembly done
+MeshSolve: Set boundaries done
+       1 0.4857E-03
+       2 0.4494E-03
+       3 0.2496E-04
+       4 0.6533E-06
+       5 0.1179E-06
+       6 0.2868E-07
+       7 0.1049E-08
+       8 0.1589E-10
+       8 0.1589E-10
+ComputeChange: NS (ITER=1) (NRM,RELC): ( 0.17465476     0.33521289E-01 ) :: mesh update
+MeshSolve:  Result Norm   :   0.17465475818534251
+MeshSolve:  Relative Change :    3.3521289388020313E-002
+ComputeChange: SS (ITER=5) (NRM,RELC): ( 0.17465476     0.33521289E-01 ) :: mesh update
+ResultOutputSolver: -------------------------------------
+ResultOutputSolver: Saving in unstructured VTK XML (.vtu) format
+ResultOutputSolver: -------------------------------------
+MAIN: 
+MAIN: -------------------------------------
+MAIN:  Steady state iteration:            6
+MAIN: -------------------------------------
+MAIN: 
+HeatSolve: 
+HeatSolve: 
+HeatSolve: -------------------------------------
+HeatSolve:  TEMPERATURE ITERATION           1
+HeatSolve: -------------------------------------
+HeatSolve: 
+HeatSolve: Starting Assembly...
+HeatSolve: Assembly done
+       1 0.2904E-03
+       2 0.1653E-03
+       3 0.8791E-04
+       4 0.5729E-04
+       5 0.4396E-04
+       6 0.2761E-04
+       7 0.1299E-04
+       8 0.7019E-05
+       9 0.3847E-05
+      10 0.1731E-05
+      11 0.5395E-06
+      12 0.8521E-07
+      13 0.1185E-07
+      14 0.9156E-09
+      14 0.9156E-09
+ComputeChange: NS (ITER=1) (NRM,RELC): (  530.59388     0.13565329E-02 ) :: heatsolver
+HeatSolve: iter:    1 Assembly: (s)    0.01    0.01
+HeatSolve: iter:    1 Solve:    (s)    0.00    0.00
+HeatSolve:  Result Norm   :    530.59387619645793
+HeatSolve:  Relative Change :    1.3565328989569457E-003
+HeatSolve: 
+HeatSolve: 
+HeatSolve: -------------------------------------
+HeatSolve:  TEMPERATURE ITERATION           2
+HeatSolve: -------------------------------------
+HeatSolve: 
+HeatSolve: Starting Assembly...
+HeatSolve: Assembly done
+       1 0.8712E-04
+       2 0.4960E-04
+       3 0.2637E-04
+       4 0.1719E-04
+       5 0.1319E-04
+       6 0.8284E-05
+       7 0.3898E-05
+       8 0.2106E-05
+       9 0.1154E-05
+      10 0.5192E-06
+      11 0.1618E-06
+      12 0.2556E-07
+      13 0.3556E-08
+      13 0.3556E-08
+ComputeChange: NS (ITER=2) (NRM,RELC): (  530.81004     0.40731495E-03 ) :: heatsolver
+HeatSolve: iter:    2 Assembly: (s)    0.00    0.01
+HeatSolve: iter:    2 Solve:    (s)    0.00    0.00
+HeatSolve:  Result Norm   :    530.81003903750229
+HeatSolve:  Relative Change :    4.0731494945864737E-004
+HeatSolve: 
+HeatSolve: 
+HeatSolve: -------------------------------------
+HeatSolve:  TEMPERATURE ITERATION           3
+HeatSolve: -------------------------------------
+HeatSolve: 
+HeatSolve: Starting Assembly...
+HeatSolve: Assembly done
+       1 0.2614E-04
+       2 0.1488E-04
+       3 0.7913E-05
+       4 0.5157E-05
+       5 0.3957E-05
+       6 0.2485E-05
+       7 0.1169E-05
+       8 0.6316E-06
+       9 0.3462E-06
+      10 0.1557E-06
+      11 0.4855E-07
+      12 0.7669E-08
+      12 0.7669E-08
+ComputeChange: NS (ITER=3) (NRM,RELC): (  530.87489     0.12216545E-03 ) :: heatsolver
+HeatSolve: iter:    3 Assembly: (s)    0.01    0.01
+HeatSolve: iter:    3 Solve:    (s)    0.00    0.00
+HeatSolve:  Result Norm   :    530.87488964379588
+HeatSolve:  Relative Change :    1.2216544577709946E-004
+HeatSolve: 
+HeatSolve: 
+HeatSolve: -------------------------------------
+HeatSolve:  TEMPERATURE ITERATION           4
+HeatSolve: -------------------------------------
+HeatSolve: 
+HeatSolve: Starting Assembly...
+HeatSolve: Assembly done
+       1 0.7841E-05
+       2 0.4465E-05
+       3 0.2375E-05
+       4 0.1549E-05
+       5 0.1189E-05
+       6 0.7461E-06
+       7 0.3506E-06
+       8 0.1893E-06
+       9 0.1037E-06
+      10 0.4665E-07
+      11 0.1456E-07
+      12 0.2303E-08
+      12 0.2303E-08
+ComputeChange: NS (ITER=4) (NRM,RELC): (  530.89439     0.36734941E-04 ) :: heatsolver
+HeatSolve: iter:    4 Assembly: (s)    0.01    0.02
+HeatSolve: iter:    4 Solve:    (s)    0.00    0.00
+HeatSolve:  Result Norm   :    530.89439166000909
+HeatSolve:  Relative Change :    3.6734941491737210E-005
+HeatSolve: 
+HeatSolve: 
+HeatSolve: -------------------------------------
+HeatSolve:  TEMPERATURE ITERATION           5
+HeatSolve: -------------------------------------
+HeatSolve: 
+HeatSolve: Starting Assembly...
+HeatSolve: Assembly done
+       1 0.2353E-05
+       2 0.1340E-05
+       3 0.7130E-06
+       4 0.4651E-06
+       5 0.3570E-06
+       6 0.2240E-06
+       7 0.1051E-06
+       8 0.5671E-07
+       9 0.3105E-07
+      10 0.1397E-07
+      11 0.4369E-08
+      11 0.4369E-08
+ComputeChange: NS (ITER=5) (NRM,RELC): (  530.90023     0.10990400E-04 ) :: heatsolver
+HeatSolve: iter:    5 Assembly: (s)    0.00    0.02
+HeatSolve: iter:    5 Solve:    (s)    0.00    0.00
+HeatSolve:  Result Norm   :    530.90022643401039
+HeatSolve:  Relative Change :    1.0990400406764629E-005
+HeatSolve: 
+HeatSolve: 
+HeatSolve: -------------------------------------
+HeatSolve:  TEMPERATURE ITERATION           6
+HeatSolve: -------------------------------------
+HeatSolve: 
+HeatSolve: Starting Assembly...
+HeatSolve: Assembly done
+       1 0.7061E-06
+       2 0.4024E-06
+       3 0.2146E-06
+       4 0.1405E-06
+       5 0.1079E-06
+       6 0.6749E-07
+       7 0.3143E-07
+       8 0.1689E-07
+       9 0.9224E-08
+       9 0.9224E-08
+ComputeChange: NS (ITER=6) (NRM,RELC): (  530.90195     0.32400492E-05 ) :: heatsolver
+HeatSolve: iter:    6 Assembly: (s)    0.00    0.03
+HeatSolve: iter:    6 Solve:    (s)    0.00    0.00
+HeatSolve:  Result Norm   :    530.90194657965128
+HeatSolve:  Relative Change :    3.2400492005138742E-006
+HeatSolve: 
+HeatSolve: 
+HeatSolve: -------------------------------------
+HeatSolve:  TEMPERATURE ITERATION           7
+HeatSolve: -------------------------------------
+HeatSolve: 
+HeatSolve: Starting Assembly...
+HeatSolve: Assembly done
+       1 0.2126E-06
+       2 0.1218E-06
+       3 0.6594E-07
+       4 0.4393E-07
+       5 0.3394E-07
+       6 0.2075E-07
+       7 0.9247E-08
+       7 0.9247E-08
+ComputeChange: NS (ITER=7) (NRM,RELC): (  530.90245     0.95425722E-06 ) :: heatsolver
+HeatSolve: iter:    7 Assembly: (s)    0.01    0.03
+HeatSolve: iter:    7 Solve:    (s)    0.00    0.00
+HeatSolve:  Result Norm   :    530.90245319690712
+HeatSolve:  Relative Change :    9.5425721713686172E-007
+ComputeChange: SS (ITER=6) (NRM,RELC): (  530.90245     0.19379325E-02 ) :: heatsolver
+SteadyPhaseChange: --------------------------------------------
+SteadyPhaseChange: Using steady algorithm to find the isotherm
+SteadyPhaseChange: --------------------------------------------
+SteadyPhaseChange: Steady state isoterm formulation
+SteadyPhaseChange: Melting point found:                5.0500E+02
+SteadyPhaseChange: Number of isotherm segments:                42
+SteadyPhaseChange: Result Norm:                        4.4643E-01
+SteadyPhaseChange: Relative Change:                    2.0149E-02
+SteadyPhaseChange: Max Height:                         5.6838E-01
+SteadyPhaseChange: Max Change in Height:               1.2814E-02
+SteadyPhaseChange: Max Angle:                          5.6838E-01
+SteadyPhaseChange: Maximum temperature difference:     8.4457E+00
+ComputeChange: SS (ITER=6) (NRM,RELC): ( 0.44642590     0.20243868E-01 ) :: steadyphasechange
+MeshSolve: 
+MeshSolve: -------------------------------------
+MeshSolve: MESH UPDATE SOLVER:
+MeshSolve: -------------------------------------
+MeshSolve: 
+MeshSolve: Starting assembly...
+MeshSolve: Assembly done
+MeshSolve: Set boundaries done
+       1 0.2827E-03
+       2 0.1407E-03
+       3 0.1003E-04
+       4 0.4462E-06
+       5 0.3020E-07
+       6 0.1645E-08
+       7 0.1848E-09
+       7 0.1848E-09
+ComputeChange: NS (ITER=1) (NRM,RELC): ( 0.17819852     0.20086308E-01 ) :: mesh update
+MeshSolve:  Result Norm   :   0.17819851802824804
+MeshSolve:  Relative Change :    2.0086308286169394E-002
+ComputeChange: SS (ITER=6) (NRM,RELC): ( 0.17819852     0.20086308E-01 ) :: mesh update
+ResultOutputSolver: -------------------------------------
+ResultOutputSolver: Saving in unstructured VTK XML (.vtu) format
+ResultOutputSolver: -------------------------------------
+MAIN: 
+MAIN: -------------------------------------
+MAIN:  Steady state iteration:            7
+MAIN: -------------------------------------
+MAIN: 
+HeatSolve: 
+HeatSolve: 
+HeatSolve: -------------------------------------
+HeatSolve:  TEMPERATURE ITERATION           1
+HeatSolve: -------------------------------------
+HeatSolve: 
+HeatSolve: Starting Assembly...
+HeatSolve: Assembly done
+       1 0.1723E-03
+       2 0.9707E-04
+       3 0.4801E-04
+       4 0.3036E-04
+       5 0.2252E-04
+       6 0.1441E-04
+       7 0.8943E-05
+       8 0.5759E-05
+       9 0.3036E-05
+      10 0.1399E-05
+      11 0.3661E-06
+      12 0.3821E-07
+      13 0.4335E-08
+      13 0.4335E-08
+ComputeChange: NS (ITER=1) (NRM,RELC): (  531.17981     0.52228185E-03 ) :: heatsolver
+HeatSolve: iter:    1 Assembly: (s)    0.01    0.01
+HeatSolve: iter:    1 Solve:    (s)    0.00    0.00
+HeatSolve:  Result Norm   :    531.17980633938680
+HeatSolve:  Relative Change :    5.2228184773705859E-004
+HeatSolve: 
+HeatSolve: 
+HeatSolve: -------------------------------------
+HeatSolve:  TEMPERATURE ITERATION           2
+HeatSolve: -------------------------------------
+HeatSolve: 
+HeatSolve: Starting Assembly...
+HeatSolve: Assembly done
+       1 0.5169E-04
+       2 0.2912E-04
+       3 0.1440E-04
+       4 0.9108E-05
+       5 0.6756E-05
+       6 0.4323E-05
+       7 0.2683E-05
+       8 0.1728E-05
+       9 0.9109E-06
+      10 0.4196E-06
+      11 0.1098E-06
+      12 0.1146E-07
+      13 0.1300E-08
+      13 0.1300E-08
+ComputeChange: NS (ITER=2) (NRM,RELC): (  531.26320     0.15698561E-03 ) :: heatsolver
+HeatSolve: iter:    2 Assembly: (s)    0.00    0.01
+HeatSolve: iter:    2 Solve:    (s)    0.00    0.00
+HeatSolve:  Result Norm   :    531.26320047352613
+HeatSolve:  Relative Change :    1.5698561448390351E-004
+HeatSolve: 
+HeatSolve: 
+HeatSolve: -------------------------------------
+HeatSolve:  TEMPERATURE ITERATION           3
+HeatSolve: -------------------------------------
+HeatSolve: 
+HeatSolve: Starting Assembly...
+HeatSolve: Assembly done
+       1 0.1551E-04
+       2 0.8737E-05
+       3 0.4321E-05
+       4 0.2733E-05
+       5 0.2027E-05
+       6 0.1297E-05
+       7 0.8050E-06
+       8 0.5184E-06
+       9 0.2733E-06
+      10 0.1259E-06
+      11 0.3294E-07
+      12 0.3438E-08
+      12 0.3438E-08
+ComputeChange: NS (ITER=3) (NRM,RELC): (  531.28821     0.47077023E-04 ) :: heatsolver
+HeatSolve: iter:    3 Assembly: (s)    0.00    0.01
+HeatSolve: iter:    3 Solve:    (s)    0.00    0.00
+HeatSolve:  Result Norm   :    531.28821135230658
+HeatSolve:  Relative Change :    4.7077023289577850E-005
+HeatSolve: 
+HeatSolve: 
+HeatSolve: -------------------------------------
+HeatSolve:  TEMPERATURE ITERATION           4
+HeatSolve: -------------------------------------
+HeatSolve: 
+HeatSolve: Starting Assembly...
+HeatSolve: Assembly done
+       1 0.4653E-05
+       2 0.2622E-05
+       3 0.1297E-05
+       4 0.8207E-06
+       5 0.6089E-06
+       6 0.3896E-06
+       7 0.2417E-06
+       8 0.1556E-06
+       9 0.8195E-07
+      10 0.3773E-07
+      11 0.9872E-08
+      11 0.9872E-08
+ComputeChange: NS (ITER=4) (NRM,RELC): (  531.29566     0.14016533E-04 ) :: heatsolver
+HeatSolve: iter:    4 Assembly: (s)    0.00    0.02
+HeatSolve: iter:    4 Solve:    (s)    0.00    0.00
+HeatSolve:  Result Norm   :    531.29565822312156
+HeatSolve:  Relative Change :    1.4016532771127934E-005
+HeatSolve: 
+HeatSolve: 
+HeatSolve: -------------------------------------
+HeatSolve:  TEMPERATURE ITERATION           5
+HeatSolve: -------------------------------------
+HeatSolve: 
+HeatSolve: Starting Assembly...
+HeatSolve: Assembly done
+       1 0.1397E-05
+       2 0.7878E-06
+       3 0.3911E-06
+       4 0.2487E-06
+       5 0.1849E-06
+       6 0.1181E-06
+       7 0.7298E-07
+       8 0.4679E-07
+       9 0.2452E-07
+      10 0.1123E-07
+      11 0.2935E-08
+      11 0.2935E-08
+ComputeChange: NS (ITER=5) (NRM,RELC): (  531.29796     0.43259886E-05 ) :: heatsolver
+HeatSolve: iter:    5 Assembly: (s)    0.01    0.02
+HeatSolve: iter:    5 Solve:    (s)    0.00    0.00
+HeatSolve:  Result Norm   :    531.29795660706736
+HeatSolve:  Relative Change :    4.3259886257957378E-006
+HeatSolve: 
+HeatSolve: 
+HeatSolve: -------------------------------------
+HeatSolve:  TEMPERATURE ITERATION           6
+HeatSolve: -------------------------------------
+HeatSolve: 
+HeatSolve: Starting Assembly...
+HeatSolve: Assembly done
+       1 0.4193E-06
+       2 0.2367E-06
+       3 0.1179E-06
+       4 0.7532E-07
+       5 0.5614E-07
+       6 0.3578E-07
+       7 0.2203E-07
+       8 0.1407E-07
+       9 0.7338E-08
+       9 0.7338E-08
+ComputeChange: NS (ITER=6) (NRM,RELC): (  531.29862     0.12392587E-05 ) :: heatsolver
+HeatSolve: iter:    6 Assembly: (s)    0.01    0.03
+HeatSolve: iter:    6 Solve:    (s)    0.00    0.00
+HeatSolve:  Result Norm   :    531.29861502309780
+HeatSolve:  Relative Change :    1.2392587140060496E-006
+HeatSolve: 
+HeatSolve: 
+HeatSolve: -------------------------------------
+HeatSolve:  TEMPERATURE ITERATION           7
+HeatSolve: -------------------------------------
+HeatSolve: 
+HeatSolve: Starting Assembly...
+HeatSolve: Assembly done
+       1 0.1264E-06
+       2 0.7195E-07
+       3 0.3675E-07
+       4 0.2419E-07
+       5 0.1825E-07
+       6 0.1143E-07
+       7 0.6853E-08
+       7 0.6853E-08
+ComputeChange: NS (ITER=7) (NRM,RELC): (  531.29881     0.36979326E-06 ) :: heatsolver
+HeatSolve: iter:    7 Assembly: (s)    0.00    0.03
+HeatSolve: iter:    7 Solve:    (s)    0.00    0.00
+HeatSolve:  Result Norm   :    531.29881149378286
+HeatSolve:  Relative Change :    3.6979326349881840E-007
+ComputeChange: SS (ITER=7) (NRM,RELC): (  531.29881     0.74629604E-03 ) :: heatsolver
+SteadyPhaseChange: --------------------------------------------
+SteadyPhaseChange: Using steady algorithm to find the isotherm
+SteadyPhaseChange: --------------------------------------------
+SteadyPhaseChange: Steady state isoterm formulation
+SteadyPhaseChange: Melting point found:                5.0500E+02
+SteadyPhaseChange: Number of isotherm segments:                42
+SteadyPhaseChange: Result Norm:                        4.5067E-01
+SteadyPhaseChange: Relative Change:                    9.4792E-03
+SteadyPhaseChange: Max Height:                         5.7513E-01
+SteadyPhaseChange: Max Change in Height:               6.7508E-03
+SteadyPhaseChange: Max Angle:                          5.7513E-01
+SteadyPhaseChange: Maximum temperature difference:     4.4708E+00
+ComputeChange: SS (ITER=7) (NRM,RELC): ( 0.45067415     0.94710830E-02 ) :: steadyphasechange
+MeshSolve: 
+MeshSolve: -------------------------------------
+MeshSolve: MESH UPDATE SOLVER:
+MeshSolve: -------------------------------------
+MeshSolve: 
+MeshSolve: Starting assembly...
+MeshSolve: Assembly done
+MeshSolve: Set boundaries done
+       1 0.1355E-03
+       2 0.3337E-04
+       3 0.5620E-05
+       4 0.4376E-06
+       5 0.2440E-07
+       6 0.2602E-08
+       7 0.2934E-09
+       7 0.2934E-09
+ComputeChange: NS (ITER=1) (NRM,RELC): ( 0.17986274     0.92957607E-02 ) :: mesh update
+MeshSolve:  Result Norm   :   0.17986274393918444
+MeshSolve:  Relative Change :    9.2957607410084526E-003
+ComputeChange: SS (ITER=7) (NRM,RELC): ( 0.17986274     0.92957607E-02 ) :: mesh update
+ResultOutputSolver: -------------------------------------
+ResultOutputSolver: Saving in unstructured VTK XML (.vtu) format
+ResultOutputSolver: -------------------------------------
+MAIN: 
+MAIN: -------------------------------------
+MAIN:  Steady state iteration:            8
+MAIN: -------------------------------------
+MAIN: 
+HeatSolve: 
+HeatSolve: 
+HeatSolve: -------------------------------------
+HeatSolve:  TEMPERATURE ITERATION           1
+HeatSolve: -------------------------------------
+HeatSolve: 
+HeatSolve: Starting Assembly...
+HeatSolve: Assembly done
+       1 0.8542E-04
+       2 0.4839E-04
+       3 0.2499E-04
+       4 0.1570E-04
+       5 0.1187E-04
+       6 0.7534E-05
+       7 0.3925E-05
+       8 0.2289E-05
+       9 0.1296E-05
+      10 0.5954E-06
+      11 0.1786E-06
+      12 0.2366E-07
+      13 0.3493E-08
+      13 0.3493E-08
+ComputeChange: NS (ITER=1) (NRM,RELC): (  531.47483     0.33125252E-03 ) :: heatsolver
+HeatSolve: iter:    1 Assembly: (s)    0.00    0.00
+HeatSolve: iter:    1 Solve:    (s)    0.00    0.00
+HeatSolve:  Result Norm   :    531.47483471764713
+HeatSolve:  Relative Change :    3.3125251927679922E-004
+HeatSolve: 
+HeatSolve: 
+HeatSolve: -------------------------------------
+HeatSolve:  TEMPERATURE ITERATION           2
+HeatSolve: -------------------------------------
+HeatSolve: 
+HeatSolve: Starting Assembly...
+HeatSolve: Assembly done
+       1 0.2563E-04
+       2 0.1452E-04
+       3 0.7497E-05
+       4 0.4710E-05
+       5 0.3562E-05
+       6 0.2260E-05
+       7 0.1177E-05
+       8 0.6866E-06
+       9 0.3886E-06
+      10 0.1786E-06
+      11 0.5358E-07
+      12 0.7099E-08
+      12 0.7099E-08
+ComputeChange: NS (ITER=2) (NRM,RELC): (  531.52765     0.99367226E-04 ) :: heatsolver
+HeatSolve: iter:    2 Assembly: (s)    0.00    0.01
+HeatSolve: iter:    2 Solve:    (s)    0.00    0.00
+HeatSolve:  Result Norm   :    531.52764852141695
+HeatSolve:  Relative Change :    9.9367225575794127E-005
+HeatSolve: 
+HeatSolve: 
+HeatSolve: -------------------------------------
+HeatSolve:  TEMPERATURE ITERATION           3
+HeatSolve: -------------------------------------
+HeatSolve: 
+HeatSolve: Starting Assembly...
+HeatSolve: Assembly done
+       1 0.7688E-05
+       2 0.4356E-05
+       3 0.2250E-05
+       4 0.1414E-05
+       5 0.1070E-05
+       6 0.6786E-06
+       7 0.3532E-06
+       8 0.2058E-06
+       9 0.1164E-06
+      10 0.5351E-07
+      11 0.1608E-07
+      12 0.2132E-08
+      12 0.2132E-08
+ComputeChange: NS (ITER=3) (NRM,RELC): (  531.54353     0.29886812E-04 ) :: heatsolver
+HeatSolve: iter:    3 Assembly: (s)    0.00    0.01
+HeatSolve: iter:    3 Solve:    (s)    0.00    0.00
+HeatSolve:  Result Norm   :    531.54353442572778
+HeatSolve:  Relative Change :    2.9886812032275488E-005
+HeatSolve: 
+HeatSolve: 
+HeatSolve: -------------------------------------
+HeatSolve:  TEMPERATURE ITERATION           4
+HeatSolve: -------------------------------------
+HeatSolve: 
+HeatSolve: Starting Assembly...
+HeatSolve: Assembly done
+       1 0.2306E-05
+       2 0.1307E-05
+       3 0.6753E-06
+       4 0.4247E-06
+       5 0.3214E-06
+       6 0.2037E-06
+       7 0.1059E-06
+       8 0.6169E-07
+       9 0.3489E-07
+      10 0.1603E-07
+      11 0.4824E-08
+      11 0.4824E-08
+ComputeChange: NS (ITER=4) (NRM,RELC): (  531.54828     0.89267629E-05 ) :: heatsolver
+HeatSolve: iter:    4 Assembly: (s)    0.00    0.02
+HeatSolve: iter:    4 Solve:    (s)    0.00    0.00
+HeatSolve:  Result Norm   :    531.54827941001099
+HeatSolve:  Relative Change :    8.9267629031705387E-006
+HeatSolve: 
+HeatSolve: 
+HeatSolve: -------------------------------------
+HeatSolve:  TEMPERATURE ITERATION           5
+HeatSolve: -------------------------------------
+HeatSolve: 
+HeatSolve: Starting Assembly...
+HeatSolve: Assembly done
+       1 0.6921E-06
+       2 0.3924E-06
+       3 0.2033E-06
+       4 0.1283E-06
+       5 0.9728E-07
+       6 0.6148E-07
+       7 0.3172E-07
+       8 0.1839E-07
+       9 0.1037E-07
+      10 0.4766E-08
+      10 0.4766E-08
+ComputeChange: NS (ITER=5) (NRM,RELC): (  531.54970     0.26778420E-05 ) :: heatsolver
+HeatSolve: iter:    5 Assembly: (s)    0.01    0.02
+HeatSolve: iter:    5 Solve:    (s)    0.00    0.00
+HeatSolve:  Result Norm   :    531.54970281421151
+HeatSolve:  Relative Change :    2.6778419756657310E-006
+HeatSolve: 
+HeatSolve: 
+HeatSolve: -------------------------------------
+HeatSolve:  TEMPERATURE ITERATION           6
+HeatSolve: -------------------------------------
+HeatSolve: 
+HeatSolve: Starting Assembly...
+HeatSolve: Assembly done
+       1 0.2078E-06
+       2 0.1181E-06
+       3 0.6167E-07
+       4 0.3944E-07
+       5 0.3006E-07
+       6 0.1878E-07
+       7 0.9450E-08
+       7 0.9450E-08
+ComputeChange: NS (ITER=6) (NRM,RELC): (  531.55009     0.72772212E-06 ) :: heatsolver
+HeatSolve: iter:    6 Assembly: (s)    0.01    0.03
+HeatSolve: iter:    6 Solve:    (s)    0.00    0.00
+HeatSolve:  Result Norm   :    531.55008963482749
+HeatSolve:  Relative Change :    7.2772211737747262E-007
+ComputeChange: SS (ITER=8) (NRM,RELC): (  531.55009     0.47283888E-03 ) :: heatsolver
+SteadyPhaseChange: --------------------------------------------
+SteadyPhaseChange: Using steady algorithm to find the isotherm
+SteadyPhaseChange: --------------------------------------------
+SteadyPhaseChange: Steady state isoterm formulation
+SteadyPhaseChange: Melting point found:                5.0500E+02
+SteadyPhaseChange: Number of isotherm segments:                42
+SteadyPhaseChange: Result Norm:                        4.5305E-01
+SteadyPhaseChange: Relative Change:                    5.2714E-03
+SteadyPhaseChange: Max Height:                         5.7866E-01
+SteadyPhaseChange: Max Change in Height:               3.5288E-03
+SteadyPhaseChange: Max Angle:                          5.7866E-01
+SteadyPhaseChange: Maximum temperature difference:     2.3427E+00
+ComputeChange: SS (ITER=8) (NRM,RELC): ( 0.45305197     0.52622495E-02 ) :: steadyphasechange
+MeshSolve: 
+MeshSolve: -------------------------------------
+MeshSolve: MESH UPDATE SOLVER:
+MeshSolve: -------------------------------------
+MeshSolve: 
+MeshSolve: Starting assembly...
+MeshSolve: Assembly done
+MeshSolve: Set boundaries done
+       1 0.7449E-04
+       2 0.1104E-03
+       3 0.2377E-05
+       4 0.2032E-06
+       5 0.5624E-08
+       6 0.1598E-08
+       7 0.9444E-10
+       7 0.9444E-10
+ComputeChange: NS (ITER=1) (NRM,RELC): ( 0.18080130     0.52045853E-02 ) :: mesh update
+MeshSolve:  Result Norm   :   0.18080129732319869
+MeshSolve:  Relative Change :    5.2045853017625779E-003
+ComputeChange: SS (ITER=8) (NRM,RELC): ( 0.18080130     0.52045853E-02 ) :: mesh update
+ResultOutputSolver: -------------------------------------
+ResultOutputSolver: Saving in unstructured VTK XML (.vtu) format
+ResultOutputSolver: -------------------------------------
+MAIN: 
+MAIN: -------------------------------------
+MAIN:  Steady state iteration:            9
+MAIN: -------------------------------------
+MAIN: 
+HeatSolve: 
+HeatSolve: 
+HeatSolve: -------------------------------------
+HeatSolve:  TEMPERATURE ITERATION           1
+HeatSolve: -------------------------------------
+HeatSolve: 
+HeatSolve: Starting Assembly...
+HeatSolve: Assembly done
+       1 0.4701E-04
+       2 0.2661E-04
+       3 0.1322E-04
+       4 0.8220E-05
+       5 0.6118E-05
+       6 0.3905E-05
+       7 0.2327E-05
+       8 0.1463E-05
+       9 0.7833E-06
+      10 0.3555E-06
+      11 0.9665E-07
+      12 0.1010E-07
+      13 0.1269E-08
+      13 0.1269E-08
+ComputeChange: NS (ITER=1) (NRM,RELC): (  531.62749     0.14560435E-03 ) :: heatsolver
+HeatSolve: iter:    1 Assembly: (s)    0.00    0.00
+HeatSolve: iter:    1 Solve:    (s)    0.00    0.00
+HeatSolve:  Result Norm   :    531.62749127348218
+HeatSolve:  Relative Change :    1.4560434690235837E-004
+HeatSolve: 
+HeatSolve: 
+HeatSolve: -------------------------------------
+HeatSolve:  TEMPERATURE ITERATION           2
+HeatSolve: -------------------------------------
+HeatSolve: 
+HeatSolve: Starting Assembly...
+HeatSolve: Assembly done
+       1 0.1410E-04
+       2 0.7984E-05
+       3 0.3967E-05
+       4 0.2466E-05
+       5 0.1836E-05
+       6 0.1172E-05
+       7 0.6982E-06
+       8 0.4388E-06
+       9 0.2350E-06
+      10 0.1067E-06
+      11 0.2899E-07
+      12 0.3031E-08
+      12 0.3031E-08
+ComputeChange: NS (ITER=2) (NRM,RELC): (  531.65071     0.43667018E-04 ) :: heatsolver
+HeatSolve: iter:    2 Assembly: (s)    0.00    0.01
+HeatSolve: iter:    2 Solve:    (s)    0.00    0.00
+HeatSolve:  Result Norm   :    531.65070636779012
+HeatSolve:  Relative Change :    4.3667018395453835E-005
+HeatSolve: 
+HeatSolve: 
+HeatSolve: -------------------------------------
+HeatSolve:  TEMPERATURE ITERATION           3
+HeatSolve: -------------------------------------
+HeatSolve: 
+HeatSolve: Starting Assembly...
+HeatSolve: Assembly done
+       1 0.4231E-05
+       2 0.2395E-05
+       3 0.1191E-05
+       4 0.7406E-06
+       5 0.5514E-06
+       6 0.3518E-06
+       7 0.2096E-06
+       8 0.1316E-06
+       9 0.7045E-07
+      10 0.3196E-07
+      11 0.8690E-08
+      11 0.8690E-08
+ComputeChange: NS (ITER=3) (NRM,RELC): (  531.65762     0.13006680E-04 ) :: heatsolver
+HeatSolve: iter:    3 Assembly: (s)    0.00    0.01
+HeatSolve: iter:    3 Solve:    (s)    0.00    0.00
+HeatSolve:  Result Norm   :    531.65762142353242
+HeatSolve:  Relative Change :    1.3006680304406171E-005
+HeatSolve: 
+HeatSolve: 
+HeatSolve: -------------------------------------
+HeatSolve:  TEMPERATURE ITERATION           4
+HeatSolve: -------------------------------------
+HeatSolve: 
+HeatSolve: Starting Assembly...
+HeatSolve: Assembly done
+       1 0.1270E-05
+       2 0.7195E-06
+       3 0.3588E-06
+       4 0.2242E-06
+       5 0.1673E-06
+       6 0.1065E-06
+       7 0.6314E-07
+       8 0.3949E-07
+       9 0.2102E-07
+      10 0.9495E-08
+      10 0.9495E-08
+ComputeChange: NS (ITER=4) (NRM,RELC): (  531.65969     0.38848855E-05 ) :: heatsolver
+HeatSolve: iter:    4 Assembly: (s)    0.01    0.02
+HeatSolve: iter:    4 Solve:    (s)    0.00    0.00
+HeatSolve:  Result Norm   :    531.65968685654229
+HeatSolve:  Relative Change :    3.8848855253111734E-006
+HeatSolve: 
+HeatSolve: 
+HeatSolve: -------------------------------------
+HeatSolve:  TEMPERATURE ITERATION           5
+HeatSolve: -------------------------------------
+HeatSolve: 
+HeatSolve: Starting Assembly...
+HeatSolve: Assembly done
+       1 0.3816E-06
+       2 0.2169E-06
+       3 0.1094E-06
+       4 0.6955E-07
+       5 0.5232E-07
+       6 0.3300E-07
+       7 0.1921E-07
+       8 0.1183E-07
+       9 0.6183E-08
+       9 0.6183E-08
+ComputeChange: NS (ITER=5) (NRM,RELC): (  531.66035     0.12431458E-05 ) :: heatsolver
+HeatSolve: iter:    5 Assembly: (s)    0.01    0.02
+HeatSolve: iter:    5 Solve:    (s)    0.00    0.00
+HeatSolve:  Result Norm   :    531.66034778747655
+HeatSolve:  Relative Change :    1.2431458314064565E-006
+HeatSolve: 
+HeatSolve: 
+HeatSolve: -------------------------------------
+HeatSolve:  TEMPERATURE ITERATION           6
+HeatSolve: -------------------------------------
+HeatSolve: 
+HeatSolve: Starting Assembly...
+HeatSolve: Assembly done
+       1 0.1149E-06
+       2 0.6575E-07
+       3 0.3386E-07
+       4 0.2212E-07
+       5 0.1681E-07
+       6 0.1039E-07
+       7 0.5861E-08
+       7 0.5861E-08
+ComputeChange: NS (ITER=6) (NRM,RELC): (  531.66054     0.36849508E-06 ) :: heatsolver
+HeatSolve: iter:    6 Assembly: (s)    0.01    0.03
+HeatSolve: iter:    6 Solve:    (s)    0.00    0.00
+HeatSolve:  Result Norm   :    531.66054370173333
+HeatSolve:  Relative Change :    3.6849507678546194E-007
+ComputeChange: SS (ITER=9) (NRM,RELC): (  531.66054     0.20777457E-03 ) :: heatsolver
+SteadyPhaseChange: --------------------------------------------
+SteadyPhaseChange: Using steady algorithm to find the isotherm
+SteadyPhaseChange: --------------------------------------------
+SteadyPhaseChange: Steady state isoterm formulation
+SteadyPhaseChange: Melting point found:                5.0500E+02
+SteadyPhaseChange: Number of isotherm segments:                42
+SteadyPhaseChange: Result Norm:                        4.5422E-01
+SteadyPhaseChange: Relative Change:                    2.5881E-03
+SteadyPhaseChange: Max Height:                         5.8049E-01
+SteadyPhaseChange: Max Change in Height:               1.8317E-03
+SteadyPhaseChange: Max Angle:                          5.8049E-01
+SteadyPhaseChange: Maximum temperature difference:     1.2175E+00
+ComputeChange: SS (ITER=9) (NRM,RELC): ( 0.45422181     0.25788153E-02 ) :: steadyphasechange
+MeshSolve: 
+MeshSolve: -------------------------------------
+MeshSolve: MESH UPDATE SOLVER:
+MeshSolve: -------------------------------------
+MeshSolve: 
+MeshSolve: Starting assembly...
+MeshSolve: Assembly done
+MeshSolve: Set boundaries done
+       1 0.3692E-04
+       2 0.9328E-04
+       3 0.7548E-06
+       4 0.6144E-07
+       5 0.5033E-07
+       6 0.3370E-09
+       6 0.3370E-09
+ComputeChange: NS (ITER=1) (NRM,RELC): ( 0.18126029     0.25354611E-02 ) :: mesh update
+MeshSolve:  Result Norm   :   0.18126029386173223
+MeshSolve:  Relative Change :    2.5354610911992475E-003
+ComputeChange: SS (ITER=9) (NRM,RELC): ( 0.18126029     0.25354611E-02 ) :: mesh update
+ResultOutputSolver: -------------------------------------
+ResultOutputSolver: Saving in unstructured VTK XML (.vtu) format
+ResultOutputSolver: -------------------------------------
+MAIN: 
+MAIN: -------------------------------------
+MAIN:  Steady state iteration:           10
+MAIN: -------------------------------------
+MAIN: 
+HeatSolve: 
+HeatSolve: 
+HeatSolve: -------------------------------------
+HeatSolve:  TEMPERATURE ITERATION           1
+HeatSolve: -------------------------------------
+HeatSolve: 
+HeatSolve: Starting Assembly...
+HeatSolve: Assembly done
+       1 0.2361E-04
+       2 0.1337E-04
+       3 0.6815E-05
+       4 0.4232E-05
+       5 0.3181E-05
+       6 0.2021E-05
+       7 0.1100E-05
+       8 0.6604E-06
+       9 0.3722E-06
+      10 0.1707E-06
+      11 0.4948E-07
+      12 0.5637E-08
+      12 0.5637E-08
+ComputeChange: NS (ITER=1) (NRM,RELC): (  531.70534     0.84254888E-04 ) :: heatsolver
+HeatSolve: iter:    1 Assembly: (s)    0.00    0.00
+HeatSolve: iter:    1 Solve:    (s)    0.00    0.00
+HeatSolve:  Result Norm   :    531.70534058869760
+HeatSolve:  Relative Change :    8.4254888418121442E-005
+HeatSolve: 
+HeatSolve: 
+HeatSolve: -------------------------------------
+HeatSolve:  TEMPERATURE ITERATION           2
+HeatSolve: -------------------------------------
+HeatSolve: 
+HeatSolve: Starting Assembly...
+HeatSolve: Assembly done
+       1 0.7082E-05
+       2 0.4010E-05
+       3 0.2045E-05
+       4 0.1271E-05
+       5 0.9553E-06
+       6 0.6069E-06
+       7 0.3301E-06
+       8 0.1980E-06
+       9 0.1115E-06
+      10 0.5115E-07
+      11 0.1484E-07
+      12 0.1692E-08
+      12 0.1692E-08
+ComputeChange: NS (ITER=2) (NRM,RELC): (  531.71881     0.25338946E-04 ) :: heatsolver
+HeatSolve: iter:    2 Assembly: (s)    0.00    0.01
+HeatSolve: iter:    2 Solve:    (s)    0.00    0.00
+HeatSolve:  Result Norm   :    531.71881361212991
+HeatSolve:  Relative Change :    2.5338945667331745E-005
+HeatSolve: 
+HeatSolve: 
+HeatSolve: -------------------------------------
+HeatSolve:  TEMPERATURE ITERATION           3
+HeatSolve: -------------------------------------
+HeatSolve: 
+HeatSolve: Starting Assembly...
+HeatSolve: Assembly done
+       1 0.2125E-05
+       2 0.1203E-05
+       3 0.6138E-06
+       4 0.3815E-06
+       5 0.2869E-06
+       6 0.1822E-06
+       7 0.9902E-07
+       8 0.5937E-07
+       9 0.3343E-07
+      10 0.1533E-07
+      11 0.4453E-08
+      11 0.4453E-08
+ComputeChange: NS (ITER=3) (NRM,RELC): (  531.72283     0.75604089E-05 ) :: heatsolver
+HeatSolve: iter:    3 Assembly: (s)    0.01    0.01
+HeatSolve: iter:    3 Solve:    (s)    0.00    0.00
+HeatSolve:  Result Norm   :    531.72283363897225
+HeatSolve:  Relative Change :    7.5604088907593213E-006
+HeatSolve: 
+HeatSolve: 
+HeatSolve: -------------------------------------
+HeatSolve:  TEMPERATURE ITERATION           4
+HeatSolve: -------------------------------------
+HeatSolve: 
+HeatSolve: Starting Assembly...
+HeatSolve: Assembly done
+       1 0.6376E-06
+       2 0.3612E-06
+       3 0.1847E-06
+       4 0.1153E-06
+       5 0.8689E-07
+       6 0.5503E-07
+       7 0.2969E-07
+       8 0.1772E-07
+       9 0.9940E-08
+       9 0.9940E-08
+ComputeChange: NS (ITER=4) (NRM,RELC): (  531.72400     0.22013051E-05 ) :: heatsolver
+HeatSolve: iter:    4 Assembly: (s)    0.00    0.02
+HeatSolve: iter:    4 Solve:    (s)    0.00    0.01
+HeatSolve:  Result Norm   :    531.72400412444790
+HeatSolve:  Relative Change :    2.2013051035370163E-006
+HeatSolve: 
+HeatSolve: 
+HeatSolve: -------------------------------------
+HeatSolve:  TEMPERATURE ITERATION           5
+HeatSolve: -------------------------------------
+HeatSolve: 
+HeatSolve: Starting Assembly...
+HeatSolve: Assembly done
+       1 0.1918E-06
+       2 0.1092E-06
+       3 0.5684E-07
+       4 0.3643E-07
+       5 0.2776E-07
+       6 0.1719E-07
+       7 0.8880E-08
+       7 0.8880E-08
+ComputeChange: NS (ITER=5) (NRM,RELC): (  531.72435     0.65795776E-06 ) :: heatsolver
+HeatSolve: iter:    5 Assembly: (s)    0.00    0.02
+HeatSolve: iter:    5 Solve:    (s)    0.00    0.01
+HeatSolve:  Result Norm   :    531.72435397649599
+HeatSolve:  Relative Change :    6.5795775680852975E-007
+ComputeChange: SS (ITER=10) (NRM,RELC): (  531.72435     0.12001351E-03 ) :: heatsolver
+SteadyPhaseChange: --------------------------------------------
+SteadyPhaseChange: Using steady algorithm to find the isotherm
+SteadyPhaseChange: --------------------------------------------
+SteadyPhaseChange: Steady state isoterm formulation
+SteadyPhaseChange: Melting point found:                5.0500E+02
+SteadyPhaseChange: Number of isotherm segments:                42
+SteadyPhaseChange: Result Norm:                        4.5485E-01
+SteadyPhaseChange: Relative Change:                    1.3903E-03
+SteadyPhaseChange: Max Height:                         5.8144E-01
+SteadyPhaseChange: Max Change in Height:               9.5031E-04
+SteadyPhaseChange: Max Angle:                          5.8144E-01
+SteadyPhaseChange: Maximum temperature difference:     6.3211E-01
+ComputeChange: SS (ITER=10) (NRM,RELC): ( 0.45485151     0.13853535E-02 ) :: steadyphasechange
+MeshSolve: 
+MeshSolve: -------------------------------------
+MeshSolve: MESH UPDATE SOLVER:
+MeshSolve: -------------------------------------
+MeshSolve: 
+MeshSolve: Starting assembly...
+MeshSolve: Assembly done
+MeshSolve: Set boundaries done
+       1 0.1971E-04
+       2 0.5928E-05
+       3 0.1850E-05
+       4 0.7965E-06
+       5 0.1490E-07
+       6 0.2276E-09
+       6 0.2276E-09
+ComputeChange: NS (ITER=1) (NRM,RELC): ( 0.18150841     0.13678809E-02 ) :: mesh update
+MeshSolve:  Result Norm   :   0.18150840605046198
+MeshSolve:  Relative Change :    1.3678809047737734E-003
+ComputeChange: SS (ITER=10) (NRM,RELC): ( 0.18150841     0.13678809E-02 ) :: mesh update
+ResultOutputSolver: -------------------------------------
+ResultOutputSolver: Saving in unstructured VTK XML (.vtu) format
+ResultOutputSolver: -------------------------------------
+ElmerSolver: *** Elmer Solver: ALL DONE ***
+ElmerSolver: The end
+SOLVER TOTAL TIME(CPU,REAL):         0.58        0.58
+ELMER SOLVER FINISHED AT: 2022/03/25 07:45:20

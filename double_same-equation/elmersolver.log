@@ -1,0 +1,1317 @@
+ELMER SOLVER (v 9.0) STARTED AT: 2022/03/25 07:50:58
+ParCommInit:  Initialize #PEs:            1
+MAIN: 
+MAIN: =============================================================
+MAIN: ElmerSolver finite element software, Welcome!
+MAIN: This program is free software licensed under (L)GPL
+MAIN: Copyright 1st April 1995 - , CSC - IT Center for Science Ltd.
+MAIN: Webpage http://www.csc.fi/elmer, Email elmeradm@csc.fi
+MAIN: Version: 9.0 (Rev: Release, Compiled: 2020-11-10)
+MAIN:  Running one task without MPI parallelization.
+MAIN:  Running with just one thread per task.
+MAIN:  Lua interpreted linked in.
+MAIN: =============================================================
+LoadInputFile: Reading only "Run Control" section
+MAIN: 
+MAIN: 
+MAIN: -------------------------------------
+MAIN: Reading Model: case.sif
+LoadInputFile: Scanning input file: case.sif
+LoadInputFile: Scanning only size info
+LoadInputFile: First time visiting
+LoadInputFile: Reading base load of sif file
+LoadInputFile: Loading input file: case.sif
+LoadInputFile: Reading base load of sif file
+Loading user function library: [SteadyPhaseChange]...[MeltingHeat]
+Loading user function library: [SteadyPhaseChange]...[MeltingHeat]
+LoadInputFile: Number of BCs: 6
+LoadInputFile: Number of Body Forces: 0
+LoadInputFile: Number of Initial Conditions: 0
+LoadInputFile: Number of Materials: 2
+LoadInputFile: Number of Equations: 2
+LoadInputFile: Number of Solvers: 5
+LoadInputFile: Number of Bodies: 5
+ElmerAsciiMesh: Base mesh name: ./.
+MAIN: -------------------------------------
+OptimizeBandwidth: ---------------------------------------------------------
+OptimizeBandwidth: Computing matrix structure for: heatsolver...done.
+OptimizeBandwidth: Half bandwidth without optimization: 404
+OptimizeBandwidth: 
+OptimizeBandwidth: Bandwidth Optimization ...done.
+OptimizeBandwidth: Half bandwidth after optimization: 20
+OptimizeBandwidth: ---------------------------------------------------------
+OptimizeBandwidth: ---------------------------------------------------------
+OptimizeBandwidth: Computing matrix structure for: steadyphasechange...done.
+OptimizeBandwidth: Half bandwidth without optimization: 2
+OptimizeBandwidth: 
+OptimizeBandwidth: Bandwidth Optimization ...done.
+OptimizeBandwidth: Half bandwidth after optimization: 2
+OptimizeBandwidth: ---------------------------------------------------------
+OptimizeBandwidth: ---------------------------------------------------------
+OptimizeBandwidth: Computing matrix structure for: steadyphasechange2...done.
+OptimizeBandwidth: Half bandwidth without optimization: 2
+OptimizeBandwidth: 
+OptimizeBandwidth: Bandwidth Optimization ...done.
+OptimizeBandwidth: Half bandwidth after optimization: 2
+OptimizeBandwidth: ---------------------------------------------------------
+OptimizeBandwidth: ---------------------------------------------------------
+OptimizeBandwidth: Computing matrix structure for: mesh update...done.
+OptimizeBandwidth: Half bandwidth without optimization: 404
+OptimizeBandwidth: 
+OptimizeBandwidth: Bandwidth Optimization ...done.
+OptimizeBandwidth: Half bandwidth after optimization: 20
+OptimizeBandwidth: ---------------------------------------------------------
+ElmerSolver: Number of timesteps to be saved: 10
+MAIN: 
+MAIN: -------------------------------------
+MAIN:  Steady state iteration:            1
+MAIN: -------------------------------------
+MAIN: 
+HeatSolve: 
+HeatSolve: 
+HeatSolve: -------------------------------------
+HeatSolve:  TEMPERATURE ITERATION           1
+HeatSolve: -------------------------------------
+HeatSolve: 
+HeatSolve: Starting Assembly...
+HeatSolve: Assembly done
+       1 0.4568E-01
+       2 0.2848E-01
+       3 0.2273E-01
+       4 0.1562E-01
+       5 0.7604E-02
+       6 0.3163E-02
+       7 0.9978E-03
+       8 0.1638E-03
+       9 0.7064E-04
+      10 0.4515E-04
+      11 0.2959E-04
+      12 0.1749E-04
+      13 0.6684E-05
+      14 0.7901E-06
+      15 0.1017E-06
+      16 0.1131E-07
+      17 0.2194E-08
+      17 0.2194E-08
+ComputeChange: NS (ITER=1) (NRM,RELC): (  348.89842      2.0000000     ) :: heatsolver
+HeatSolve: iter:    1 Assembly: (s)    0.01    0.01
+HeatSolve: iter:    1 Solve:    (s)    0.00    0.00
+HeatSolve:  Result Norm   :    348.89841622528564
+HeatSolve:  Relative Change :    2.0000000000000000
+HeatSolve: 
+HeatSolve: 
+HeatSolve: -------------------------------------
+HeatSolve:  TEMPERATURE ITERATION           2
+HeatSolve: -------------------------------------
+HeatSolve: 
+HeatSolve: Starting Assembly...
+HeatSolve: Assembly done
+       1 0.1370E-01
+       2 0.8543E-02
+       3 0.6819E-02
+       4 0.4686E-02
+       5 0.2281E-02
+       6 0.9489E-03
+       7 0.2993E-03
+       8 0.4915E-04
+       9 0.2119E-04
+      10 0.1355E-04
+      11 0.8877E-05
+      12 0.5246E-05
+      13 0.2005E-05
+      14 0.2370E-06
+      15 0.3050E-07
+      16 0.3393E-08
+      16 0.3393E-08
+ComputeChange: NS (ITER=2) (NRM,RELC): (  449.88864     0.25285894     ) :: heatsolver
+HeatSolve: iter:    2 Assembly: (s)    0.00    0.01
+HeatSolve: iter:    2 Solve:    (s)    0.00    0.00
+HeatSolve:  Result Norm   :    449.88863967385504
+HeatSolve:  Relative Change :   0.25285893831840206
+HeatSolve: 
+HeatSolve: 
+HeatSolve: -------------------------------------
+HeatSolve:  TEMPERATURE ITERATION           3
+HeatSolve: -------------------------------------
+HeatSolve: 
+HeatSolve: Starting Assembly...
+HeatSolve: Assembly done
+       1 0.4111E-02
+       2 0.2563E-02
+       3 0.2046E-02
+       4 0.1406E-02
+       5 0.6843E-03
+       6 0.2847E-03
+       7 0.8980E-04
+       8 0.1475E-04
+       9 0.6358E-05
+      10 0.4064E-05
+      11 0.2663E-05
+      12 0.1574E-05
+      13 0.6015E-06
+      14 0.7111E-07
+      15 0.9149E-08
+      15 0.9149E-08
+ComputeChange: NS (ITER=3) (NRM,RELC): (  480.31689     0.65422643E-01 ) :: heatsolver
+HeatSolve: iter:    3 Assembly: (s)    0.01    0.01
+HeatSolve: iter:    3 Solve:    (s)    0.00    0.00
+HeatSolve:  Result Norm   :    480.31689206517251
+HeatSolve:  Relative Change :    6.5422643390287277E-002
+HeatSolve: 
+HeatSolve: 
+HeatSolve: -------------------------------------
+HeatSolve:  TEMPERATURE ITERATION           4
+HeatSolve: -------------------------------------
+HeatSolve: 
+HeatSolve: Starting Assembly...
+HeatSolve: Assembly done
+       1 0.1233E-02
+       2 0.7689E-03
+       3 0.6137E-03
+       4 0.4218E-03
+       5 0.2053E-03
+       6 0.8540E-04
+       7 0.2694E-04
+       8 0.4423E-05
+       9 0.1907E-05
+      10 0.1219E-05
+      11 0.7987E-06
+      12 0.4721E-06
+      13 0.1805E-06
+      14 0.2134E-07
+      15 0.2745E-08
+      15 0.2745E-08
+ComputeChange: NS (ITER=4) (NRM,RELC): (  489.45379     0.18843416E-01 ) :: heatsolver
+HeatSolve: iter:    4 Assembly: (s)    0.01    0.02
+HeatSolve: iter:    4 Solve:    (s)    0.00    0.00
+HeatSolve:  Result Norm   :    489.45378818364640
+HeatSolve:  Relative Change :    1.8843415880813359E-002
+HeatSolve: 
+HeatSolve: 
+HeatSolve: -------------------------------------
+HeatSolve:  TEMPERATURE ITERATION           5
+HeatSolve: -------------------------------------
+HeatSolve: 
+HeatSolve: Starting Assembly...
+HeatSolve: Assembly done
+       1 0.3700E-03
+       2 0.2307E-03
+       3 0.1841E-03
+       4 0.1265E-03
+       5 0.6159E-04
+       6 0.2562E-04
+       7 0.8082E-05
+       8 0.1327E-05
+       9 0.5719E-06
+      10 0.3656E-06
+      11 0.2396E-06
+      12 0.1416E-06
+      13 0.5414E-07
+      14 0.6402E-08
+      14 0.6402E-08
+ComputeChange: NS (ITER=5) (NRM,RELC): (  492.19554     0.55860178E-02 ) :: heatsolver
+HeatSolve: iter:    5 Assembly: (s)    0.00    0.02
+HeatSolve: iter:    5 Solve:    (s)    0.00    0.00
+HeatSolve:  Result Norm   :    492.19554351138464
+HeatSolve:  Relative Change :    5.5860178155553979E-003
+HeatSolve: 
+HeatSolve: 
+HeatSolve: -------------------------------------
+HeatSolve:  TEMPERATURE ITERATION           6
+HeatSolve: -------------------------------------
+HeatSolve: 
+HeatSolve: Starting Assembly...
+HeatSolve: Assembly done
+       1 0.1110E-03
+       2 0.6920E-04
+       3 0.5523E-04
+       4 0.3796E-04
+       5 0.1848E-04
+       6 0.7686E-05
+       7 0.2425E-05
+       8 0.3976E-06
+       9 0.1712E-06
+      10 0.1095E-06
+      11 0.7175E-07
+      12 0.4244E-07
+      13 0.1625E-07
+      14 0.1923E-08
+      14 0.1923E-08
+ComputeChange: NS (ITER=6) (NRM,RELC): (  493.01814     0.16698789E-02 ) :: heatsolver
+HeatSolve: iter:    6 Assembly: (s)    0.01    0.03
+HeatSolve: iter:    6 Solve:    (s)    0.00    0.00
+HeatSolve:  Result Norm   :    493.01813726517264
+HeatSolve:  Relative Change :    1.6698788696064802E-003
+HeatSolve: 
+HeatSolve: 
+HeatSolve: -------------------------------------
+HeatSolve:  TEMPERATURE ITERATION           7
+HeatSolve: -------------------------------------
+HeatSolve: 
+HeatSolve: Starting Assembly...
+HeatSolve: Assembly done
+       1 0.3330E-04
+       2 0.2076E-04
+       3 0.1657E-04
+       4 0.1139E-04
+       5 0.5543E-05
+       6 0.2306E-05
+       7 0.7273E-06
+       8 0.1191E-06
+       9 0.5123E-07
+      10 0.3277E-07
+      11 0.2149E-07
+      12 0.1272E-07
+      13 0.4876E-08
+      13 0.4876E-08
+ComputeChange: NS (ITER=7) (NRM,RELC): (  493.26492     0.50042251E-03 ) :: heatsolver
+HeatSolve: iter:    7 Assembly: (s)    0.01    0.04
+HeatSolve: iter:    7 Solve:    (s)    0.00    0.00
+HeatSolve:  Result Norm   :    493.26491638592915
+HeatSolve:  Relative Change :    5.0042251023774045E-004
+HeatSolve: 
+HeatSolve: 
+HeatSolve: -------------------------------------
+HeatSolve:  TEMPERATURE ITERATION           8
+HeatSolve: -------------------------------------
+HeatSolve: 
+HeatSolve: Starting Assembly...
+HeatSolve: Assembly done
+       1 0.9991E-05
+       2 0.6229E-05
+       3 0.4971E-05
+       4 0.3417E-05
+       5 0.1663E-05
+       6 0.6917E-06
+       7 0.2181E-06
+       8 0.3539E-07
+       9 0.1507E-07
+      10 0.9670E-08
+      10 0.9670E-08
+ComputeChange: NS (ITER=8) (NRM,RELC): (  493.33894     0.15005692E-03 ) :: heatsolver
+HeatSolve: iter:    8 Assembly: (s)    0.00    0.04
+HeatSolve: iter:    8 Solve:    (s)    0.00    0.01
+HeatSolve:  Result Norm   :    493.33893975259491
+HeatSolve:  Relative Change :    1.5005691738420021E-004
+HeatSolve: 
+HeatSolve: 
+HeatSolve: -------------------------------------
+HeatSolve:  TEMPERATURE ITERATION           9
+HeatSolve: -------------------------------------
+HeatSolve: 
+HeatSolve: Starting Assembly...
+HeatSolve: Assembly done
+       1 0.2998E-05
+       2 0.1869E-05
+       3 0.1492E-05
+       4 0.1025E-05
+       5 0.4989E-06
+       6 0.2074E-06
+       7 0.6521E-07
+       8 0.9955E-08
+       8 0.9955E-08
+ComputeChange: NS (ITER=9) (NRM,RELC): (  493.36110     0.44921131E-04 ) :: heatsolver
+HeatSolve: iter:    9 Assembly: (s)    0.00    0.04
+HeatSolve: iter:    9 Solve:    (s)    0.00    0.01
+HeatSolve:  Result Norm   :    493.36110159353586
+HeatSolve:  Relative Change :    4.4921131067792625E-005
+HeatSolve: 
+HeatSolve: 
+HeatSolve: -------------------------------------
+HeatSolve:  TEMPERATURE ITERATION          10
+HeatSolve: -------------------------------------
+HeatSolve: 
+HeatSolve: Starting Assembly...
+HeatSolve: Assembly done
+       1 0.9011E-06
+       2 0.5637E-06
+       3 0.4501E-06
+       4 0.3083E-06
+       5 0.1489E-06
+       6 0.6164E-07
+       7 0.1938E-07
+       8 0.2673E-08
+       8 0.2673E-08
+ComputeChange: NS (ITER=10) (NRM,RELC): (  493.36780     0.13567449E-04 ) :: heatsolver
+HeatSolve: iter:   10 Assembly: (s)    0.01    0.05
+HeatSolve: iter:   10 Solve:    (s)    0.00    0.01
+HeatSolve:  Result Norm   :    493.36779529037716
+HeatSolve:  Relative Change :    1.3567448693222091E-005
+HeatSolve: 
+HeatSolve: 
+HeatSolve: -------------------------------------
+HeatSolve:  TEMPERATURE ITERATION          11
+HeatSolve: -------------------------------------
+HeatSolve: 
+HeatSolve: Starting Assembly...
+HeatSolve: Assembly done
+       1 0.2708E-06
+       2 0.1699E-06
+       3 0.1357E-06
+       4 0.9268E-07
+       5 0.4444E-07
+       6 0.1833E-07
+       7 0.5775E-08
+       7 0.5775E-08
+ComputeChange: NS (ITER=11) (NRM,RELC): (  493.36978     0.40172005E-05 ) :: heatsolver
+HeatSolve: iter:   11 Assembly: (s)    0.01    0.05
+HeatSolve: iter:   11 Solve:    (s)    0.00    0.01
+HeatSolve:  Result Norm   :    493.36977725170095
+HeatSolve:  Relative Change :    4.0172004775024093E-006
+HeatSolve: 
+HeatSolve: 
+HeatSolve: -------------------------------------
+HeatSolve:  TEMPERATURE ITERATION          12
+HeatSolve: -------------------------------------
+HeatSolve: 
+HeatSolve: Starting Assembly...
+HeatSolve: Assembly done
+       1 0.8243E-07
+       2 0.5298E-07
+       3 0.4244E-07
+       4 0.2817E-07
+       5 0.1276E-07
+       6 0.5141E-08
+       6 0.5141E-08
+ComputeChange: NS (ITER=12) (NRM,RELC): (  493.37038     0.12138403E-05 ) :: heatsolver
+HeatSolve: iter:   12 Assembly: (s)    0.01    0.06
+HeatSolve: iter:   12 Solve:    (s)    0.00    0.01
+HeatSolve:  Result Norm   :    493.37037612419942
+HeatSolve:  Relative Change :    1.2138403335931753E-006
+HeatSolve: 
+HeatSolve: 
+HeatSolve: -------------------------------------
+HeatSolve:  TEMPERATURE ITERATION          13
+HeatSolve: -------------------------------------
+HeatSolve: 
+HeatSolve: Starting Assembly...
+HeatSolve: Assembly done
+       1 0.2599E-07
+       2 0.1778E-07
+       3 0.1423E-07
+       4 0.8591E-08
+       4 0.8591E-08
+ComputeChange: NS (ITER=13) (NRM,RELC): (  493.37051     0.27204806E-06 ) :: heatsolver
+HeatSolve: iter:   13 Assembly: (s)    0.00    0.06
+HeatSolve: iter:   13 Solve:    (s)    0.00    0.01
+HeatSolve:  Result Norm   :    493.37051034467214
+HeatSolve:  Relative Change :    2.7204806156745893E-007
+ComputeChange: SS (ITER=1) (NRM,RELC): (  493.37051      2.0000000     ) :: heatsolver
+SteadyPhaseChange: --------------------------------------------
+SteadyPhaseChange: Using steady algorithm to find the isotherm
+SteadyPhaseChange: --------------------------------------------
+SteadyPhaseChange: Number of interface nodes:                  22
+SteadyPhaseChange: Number of interface elements:               20
+SteadyPhaseChange: Width of the interface              1.0000E+00
+SteadyPhaseChange: Index of the triple point:                   3
+SteadyPhaseChange: Index of the axis point:                     4
+SteadyPhaseChange: Body index for solid:                        2
+SteadyPhaseChange: Body index for liquid:                       1
+SteadyPhaseChange: Steady state isoterm formulation
+SteadyPhaseChange: Melting point found:                5.0500E+02
+SteadyPhaseChange: Number of isotherm segments:                48
+SteadyPhaseChange: Result Norm:                        1.1619E+00
+SteadyPhaseChange: Relative Change:                    1.0000E+00
+SteadyPhaseChange: Max Height:                         2.0000E+00
+SteadyPhaseChange: Max Change in Height:               2.0000E+00
+SteadyPhaseChange: Max Angle:                          2.0000E+00
+SteadyPhaseChange: Maximum temperature difference:     9.0068E+01
+ComputeChange: SS (ITER=1) (NRM,RELC): (  1.1618950      2.0000000     ) :: steadyphasechange
+SteadyPhaseChange: --------------------------------------------
+SteadyPhaseChange: Using steady algorithm to find the isotherm
+SteadyPhaseChange: --------------------------------------------
+SteadyPhaseChange: Steady state isoterm formulation
+SteadyPhaseChange: Melting point found:                5.0500E+02
+SteadyPhaseChange: Number of isotherm segments:                48
+SteadyPhaseChange: Result Norm:                        1.1619E+00
+SteadyPhaseChange: Relative Change:                    1.0000E+00
+SteadyPhaseChange: Max Height:                         2.0000E+00
+SteadyPhaseChange: Max Change in Height:               2.0000E+00
+SteadyPhaseChange: Max Angle:                          2.0000E+00
+SteadyPhaseChange: Maximum temperature difference:     9.0068E+01
+ComputeChange: SS (ITER=1) (NRM,RELC): (  1.1618950      2.0000000     ) :: steadyphasechange2
+MeshSolve: 
+MeshSolve: -------------------------------------
+MeshSolve: MESH UPDATE SOLVER:
+MeshSolve: -------------------------------------
+MeshSolve: 
+MeshSolve: Starting assembly...
+MeshSolve: Assembly done
+MeshSolve: Set boundaries done
+       1 0.9115E-02
+       2 0.2214E-02
+       3 0.3224E-04
+       4 0.1437E-05
+       5 0.1411E-06
+       6 0.4973E-08
+       7 0.1111E-09
+       7 0.1111E-09
+ComputeChange: NS (ITER=1) (NRM,RELC): ( 0.57337512      2.0000000     ) :: mesh update
+MeshSolve:  Result Norm   :   0.57337511730347235
+MeshSolve:  Relative Change :    2.0000000000000000
+ComputeChange: SS (ITER=1) (NRM,RELC): ( 0.57337512      2.0000000     ) :: mesh update
+ResultOutputSolver: -------------------------------------
+ResultOutputSolver: Saving with prefix: Case
+ResultOutputSolver: Creating list for saving - if not present
+CreateListForSaving: Field Variables for Saving
+ResultOutputSolver: Saving in unstructured VTK XML (.vtu) format
+VtuOutputSolver: Saving results in VTK XML format with prefix: case
+VtuOutputSolver: Saving number of partitions: 1
+ResultOutputSolver: -------------------------------------
+SaveResult: -----------------------------------------
+SaveResult: Saving results to file: ././case.result
+SaveResult: -----------------------------------------
+MAIN: 
+MAIN: -------------------------------------
+MAIN:  Steady state iteration:            2
+MAIN: -------------------------------------
+MAIN: 
+HeatSolve: 
+HeatSolve: 
+HeatSolve: -------------------------------------
+HeatSolve:  TEMPERATURE ITERATION           1
+HeatSolve: -------------------------------------
+HeatSolve: 
+HeatSolve: Starting Assembly...
+HeatSolve: Assembly done
+       1 0.2175E+00
+       2 0.7645E-01
+       3 0.5010E-01
+       4 0.5996E-01
+       5 0.6302E+00
+       6 0.3413E-01
+       7 0.2845E-01
+       8 0.9332E-02
+       9 0.5896E-02
+      10 0.6449E-02
+      11 0.1951E-02
+      12 0.2348E-02
+      13 0.7446E-03
+      14 0.6039E-03
+      15 0.3989E-03
+      16 0.9230E-03
+      17 0.1175E-03
+      18 0.1031E-03
+      19 0.9006E-04
+      20 0.9599E-05
+      21 0.1840E-04
+      22 0.8046E-06
+      23 0.2826E-05
+      24 0.7540E-06
+      25 0.8268E-06
+      26 0.2096E-07
+      27 0.1913E-07
+      28 0.6595E-08
+      28 0.6595E-08
+ComputeChange: NS (ITER=1) (NRM,RELC): (  409.00182     0.18699308     ) :: heatsolver
+HeatSolve: iter:    1 Assembly: (s)    0.01    0.01
+HeatSolve: iter:    1 Solve:    (s)    0.00    0.00
+HeatSolve:  Result Norm   :    409.00181874551470
+HeatSolve:  Relative Change :   0.18699308229945796
+HeatSolve: 
+HeatSolve: 
+HeatSolve: -------------------------------------
+HeatSolve:  TEMPERATURE ITERATION           2
+HeatSolve: -------------------------------------
+HeatSolve: 
+HeatSolve: Starting Assembly...
+HeatSolve: Assembly done
+       1 0.6526E-01
+       2 0.2294E-01
+       3 0.1503E-01
+       4 0.1799E-01
+       5 0.1891E+00
+       6 0.1024E-01
+       7 0.4712E-02
+       8 0.3453E-02
+       9 0.1996E-02
+      10 0.2231E-02
+      11 0.6169E-03
+      12 0.7611E-03
+      13 0.1720E-03
+      14 0.1122E-03
+      15 0.4172E-03
+      16 0.5188E-04
+      17 0.3009E-04
+      18 0.6730E-04
+      19 0.2524E-04
+      20 0.2464E-05
+      21 0.5306E-06
+      22 0.2439E-06
+      23 0.2564E-07
+      24 0.6796E-07
+      25 0.9909E-08
+      25 0.9909E-08
+ComputeChange: NS (ITER=2) (NRM,RELC): (  384.72022     0.61184140E-01 ) :: heatsolver
+HeatSolve: iter:    2 Assembly: (s)    0.01    0.01
+HeatSolve: iter:    2 Solve:    (s)    0.00    0.00
+HeatSolve:  Result Norm   :    384.72021857785893
+HeatSolve:  Relative Change :    6.1184140104108262E-002
+HeatSolve: 
+HeatSolve: 
+HeatSolve: -------------------------------------
+HeatSolve:  TEMPERATURE ITERATION           3
+HeatSolve: -------------------------------------
+HeatSolve: 
+HeatSolve: Starting Assembly...
+HeatSolve: Assembly done
+       1 0.1958E-01
+       2 0.6881E-02
+       3 0.4509E-02
+       4 0.5396E-02
+       5 0.5667E-01
+       6 0.3071E-02
+       7 0.1396E-01
+       8 0.1126E-02
+       9 0.5912E-03
+      10 0.6549E-03
+      11 0.1821E-03
+      12 0.2490E-03
+      13 0.1464E-03
+      14 0.4920E-04
+      15 0.8878E-04
+      16 0.4849E-04
+      17 0.1423E-04
+      18 0.1207E-04
+      19 0.8493E-05
+      20 0.9594E-06
+      21 0.4414E-06
+      22 0.7031E-07
+      23 0.3420E-06
+      24 0.1579E-06
+      25 0.2763E-07
+      26 0.1839E-08
+      26 0.1839E-08
+ComputeChange: NS (ITER=3) (NRM,RELC): (  377.55637     0.18795919E-01 ) :: heatsolver
+HeatSolve: iter:    3 Assembly: (s)    0.01    0.02
+HeatSolve: iter:    3 Solve:    (s)    0.00    0.00
+HeatSolve:  Result Norm   :    377.55637395074507
+HeatSolve:  Relative Change :    1.8795919217065665E-002
+HeatSolve: 
+HeatSolve: 
+HeatSolve: -------------------------------------
+HeatSolve:  TEMPERATURE ITERATION           4
+HeatSolve: -------------------------------------
+HeatSolve: 
+HeatSolve: Starting Assembly...
+HeatSolve: Assembly done
+       1 0.5873E-02
+       2 0.2064E-02
+       3 0.1353E-02
+       4 0.1619E-02
+       5 0.1703E-01
+       6 0.9221E-03
+       7 0.5333E-03
+       8 0.3421E-03
+       9 0.1776E-03
+      10 0.1966E-03
+      11 0.5469E-04
+      12 0.7232E-04
+      13 0.3944E-04
+      14 0.1483E-04
+      15 0.2149E-04
+      16 0.1476E-04
+      17 0.3697E-05
+      18 0.2580E-05
+      19 0.2366E-05
+      20 0.4310E-06
+      21 0.2667E-07
+      22 0.2006E-07
+      23 0.6877E-07
+      24 0.8182E-08
+      24 0.8182E-08
+ComputeChange: NS (ITER=4) (NRM,RELC): (  375.41907     0.56769668E-02 ) :: heatsolver
+HeatSolve: iter:    4 Assembly: (s)    0.01    0.02
+HeatSolve: iter:    4 Solve:    (s)    0.00    0.00
+HeatSolve:  Result Norm   :    375.41906566215323
+HeatSolve:  Relative Change :    5.6769668070199503E-003
+HeatSolve: 
+HeatSolve: 
+HeatSolve: -------------------------------------
+HeatSolve:  TEMPERATURE ITERATION           5
+HeatSolve: -------------------------------------
+HeatSolve: 
+HeatSolve: Starting Assembly...
+HeatSolve: Assembly done
+       1 0.1762E-02
+       2 0.6193E-03
+       3 0.4058E-03
+       4 0.4856E-03
+       5 0.5090E-02
+       6 0.2765E-03
+       7 0.1270E-03
+       8 0.8622E-04
+       9 0.5668E-04
+      10 0.5299E-04
+      11 0.1593E-04
+      12 0.1991E-04
+      13 0.5178E-05
+      14 0.4427E-05
+      15 0.1475E-04
+      16 0.6060E-05
+      17 0.8745E-06
+      18 0.7862E-06
+      19 0.7211E-06
+      20 0.1197E-06
+      21 0.9054E-08
+      21 0.9054E-08
+ComputeChange: NS (ITER=5) (NRM,RELC): (  374.77894     0.17065430E-02 ) :: heatsolver
+HeatSolve: iter:    5 Assembly: (s)    0.01    0.03
+HeatSolve: iter:    5 Solve:    (s)    0.00    0.00
+HeatSolve:  Result Norm   :    374.77894306957444
+HeatSolve:  Relative Change :    1.7065430329813109E-003
+HeatSolve: 
+HeatSolve: 
+HeatSolve: -------------------------------------
+HeatSolve:  TEMPERATURE ITERATION           6
+HeatSolve: -------------------------------------
+HeatSolve: 
+HeatSolve: Starting Assembly...
+HeatSolve: Assembly done
+       1 0.5286E-03
+       2 0.1858E-03
+       3 0.1217E-03
+       4 0.1457E-03
+       5 0.1510E-02
+       6 0.8295E-04
+       7 0.8386E-04
+       8 0.2179E-04
+       9 0.1749E-04
+      10 0.1942E-04
+      11 0.4505E-05
+      12 0.5741E-05
+      13 0.1457E-05
+      14 0.1903E-05
+      15 0.1798E-05
+      16 0.3035E-06
+      17 0.2908E-06
+      18 0.2495E-06
+      19 0.4592E-07
+      20 0.4039E-07
+      21 0.1836E-08
+      21 0.1836E-08
+ComputeChange: NS (ITER=6) (NRM,RELC): (  374.58702     0.51222863E-03 ) :: heatsolver
+HeatSolve: iter:    6 Assembly: (s)    0.00    0.03
+HeatSolve: iter:    6 Solve:    (s)    0.00    0.00
+HeatSolve:  Result Norm   :    374.58701971970328
+HeatSolve:  Relative Change :    5.1222862900467635E-004
+HeatSolve: 
+HeatSolve: 
+HeatSolve: -------------------------------------
+HeatSolve:  TEMPERATURE ITERATION           7
+HeatSolve: -------------------------------------
+HeatSolve: 
+HeatSolve: Starting Assembly...
+HeatSolve: Assembly done
+       1 0.1586E-03
+       2 0.5573E-04
+       3 0.3652E-04
+       4 0.4371E-04
+       5 0.4490E-03
+       6 0.2488E-04
+       7 0.1434E-03
+       8 0.8871E-05
+       9 0.4791E-05
+      10 0.5316E-05
+      11 0.1477E-05
+      12 0.1871E-05
+      13 0.4803E-06
+      14 0.4088E-06
+      15 0.5099E-06
+      16 0.5200E-06
+      17 0.6879E-07
+      18 0.7300E-07
+      19 0.6434E-07
+      20 0.6880E-08
+      20 0.6880E-08
+ComputeChange: NS (ITER=7) (NRM,RELC): (  374.52941     0.15382009E-03 ) :: heatsolver
+HeatSolve: iter:    7 Assembly: (s)    0.01    0.04
+HeatSolve: iter:    7 Solve:    (s)    0.00    0.00
+HeatSolve:  Result Norm   :    374.52940514358011
+HeatSolve:  Relative Change :    1.5382008513212437E-004
+HeatSolve: 
+HeatSolve: 
+HeatSolve: -------------------------------------
+HeatSolve:  TEMPERATURE ITERATION           8
+HeatSolve: -------------------------------------
+HeatSolve: 
+HeatSolve: Starting Assembly...
+HeatSolve: Assembly done
+       1 0.4758E-04
+       2 0.1672E-04
+       3 0.1095E-04
+       4 0.1311E-04
+       5 0.1304E-03
+       6 0.7466E-05
+       7 0.6104E-04
+       8 0.2720E-05
+       9 0.1434E-05
+      10 0.1589E-05
+      11 0.4412E-06
+      12 0.5587E-06
+      13 0.3388E-06
+      14 0.1209E-06
+      15 0.2854E-06
+      16 0.1239E-06
+      17 0.2930E-07
+      18 0.2600E-07
+      19 0.2017E-07
+      20 0.4252E-07
+      21 0.1649E-08
+      21 0.1649E-08
+ComputeChange: NS (ITER=8) (NRM,RELC): (  374.51215     0.46066196E-04 ) :: heatsolver
+HeatSolve: iter:    8 Assembly: (s)    0.01    0.04
+HeatSolve: iter:    8 Solve:    (s)    0.00    0.00
+HeatSolve:  Result Norm   :    374.51215239598923
+HeatSolve:  Relative Change :    4.6066195973278271E-005
+HeatSolve: 
+HeatSolve: 
+HeatSolve: -------------------------------------
+HeatSolve:  TEMPERATURE ITERATION           9
+HeatSolve: -------------------------------------
+HeatSolve: 
+HeatSolve: Starting Assembly...
+HeatSolve: Assembly done
+       1 0.1427E-04
+       2 0.5016E-05
+       3 0.3286E-05
+       4 0.3934E-05
+       5 0.3854E-04
+       6 0.2241E-05
+       7 0.1003E-05
+       8 0.7715E-06
+       9 0.4321E-06
+      10 0.4811E-06
+      11 0.1330E-06
+      12 0.1674E-06
+      13 0.3748E-07
+      14 0.3630E-07
+      15 0.5825E-06
+      16 0.1541E-07
+      17 0.9630E-08
+      17 0.9630E-08
+ComputeChange: NS (ITER=9) (NRM,RELC): (  374.50697     0.13838605E-04 ) :: heatsolver
+HeatSolve: iter:    9 Assembly: (s)    0.01    0.05
+HeatSolve: iter:    9 Solve:    (s)    0.00    0.00
+HeatSolve:  Result Norm   :    374.50696970617042
+HeatSolve:  Relative Change :    1.3838604825639622E-005
+HeatSolve: 
+HeatSolve: 
+HeatSolve: -------------------------------------
+HeatSolve:  TEMPERATURE ITERATION          10
+HeatSolve: -------------------------------------
+HeatSolve: 
+HeatSolve: Starting Assembly...
+HeatSolve: Assembly done
+       1 0.4275E-05
+       2 0.1504E-05
+       3 0.9825E-06
+       4 0.1178E-05
+       5 0.3609E-04
+       6 0.6623E-06
+       7 0.3187E-06
+       8 0.2131E-06
+       9 0.1320E-06
+      10 0.1482E-06
+      11 0.4030E-07
+      12 0.5023E-07
+      13 0.1165E-07
+      14 0.1105E-07
+      15 0.9524E-08
+      15 0.9524E-08
+ComputeChange: NS (ITER=10) (NRM,RELC): (  374.50542     0.41443289E-05 ) :: heatsolver
+HeatSolve: iter:   10 Assembly: (s)    0.01    0.05
+HeatSolve: iter:   10 Solve:    (s)    0.00    0.00
+HeatSolve:  Result Norm   :    374.50541762931380
+HeatSolve:  Relative Change :    4.1443289399992095E-006
+HeatSolve: 
+HeatSolve: 
+HeatSolve: -------------------------------------
+HeatSolve:  TEMPERATURE ITERATION          11
+HeatSolve: -------------------------------------
+HeatSolve: 
+HeatSolve: Starting Assembly...
+HeatSolve: Assembly done
+       1 0.1278E-05
+       2 0.4505E-06
+       3 0.2902E-06
+       4 0.3516E-06
+       5 0.6632E-05
+       6 0.1920E-06
+       7 0.9022E-07
+       8 0.6872E-07
+       9 0.3704E-07
+      10 0.4059E-07
+      11 0.1111E-07
+      12 0.1526E-07
+      13 0.3406E-08
+      13 0.3406E-08
+ComputeChange: NS (ITER=11) (NRM,RELC): (  374.50499     0.11530966E-05 ) :: heatsolver
+HeatSolve: iter:   11 Assembly: (s)    0.00    0.06
+HeatSolve: iter:   11 Solve:    (s)    0.00    0.00
+HeatSolve:  Result Norm   :    374.50498578863449
+HeatSolve:  Relative Change :    1.1530966121196123E-006
+HeatSolve: 
+HeatSolve: 
+HeatSolve: -------------------------------------
+HeatSolve:  TEMPERATURE ITERATION          12
+HeatSolve: -------------------------------------
+HeatSolve: 
+HeatSolve: Starting Assembly...
+HeatSolve: Assembly done
+       1 0.3826E-06
+       2 0.1352E-06
+       3 0.8828E-07
+       4 0.1056E-06
+       5 0.7476E-06
+       6 0.5841E-07
+       7 0.6757E-07
+       8 0.1712E-07
+       9 0.1419E-07
+      10 0.1542E-07
+      11 0.3798E-08
+      11 0.3798E-08
+ComputeChange: NS (ITER=12) (NRM,RELC): (  374.50486     0.33584904E-06 ) :: heatsolver
+HeatSolve: iter:   12 Assembly: (s)    0.01    0.06
+HeatSolve: iter:   12 Solve:    (s)    0.00    0.00
+HeatSolve:  Result Norm   :    374.50486001151683
+HeatSolve:  Relative Change :    3.3584903687172192E-007
+ComputeChange: SS (ITER=2) (NRM,RELC): (  374.50486     0.27392332     ) :: heatsolver
+SteadyPhaseChange: --------------------------------------------
+SteadyPhaseChange: Using steady algorithm to find the isotherm
+SteadyPhaseChange: --------------------------------------------
+SteadyPhaseChange: Steady state isoterm formulation
+SteadyPhaseChange: Melting point found:                5.0500E+02
+SteadyPhaseChange: Number of isotherm segments:                44
+WARNING:: SteadyPhaseChange: Isotherm error?
+WARNING:: SteadyPhaseChange:  Nodeindexes          27
+WARNING:: SteadyPhaseChange:  x:  0.90000000000000002       y:  0.90000000000000002
+WARNING:: SteadyPhaseChange:  dxmin:   4.4453931175351014E-002  dymin:   1.7976931348623157E+308
+WARNING:: SteadyPhaseChange: Isotherm error?
+WARNING:: SteadyPhaseChange:  Nodeindexes          28
+WARNING:: SteadyPhaseChange:  x:  0.80000000000000004       y:  0.80000000000000004
+WARNING:: SteadyPhaseChange:  dxmin:  0.14445393117535099       dymin:   1.7976931348623157E+308
+WARNING:: SteadyPhaseChange: Isotherm error?
+WARNING:: SteadyPhaseChange:  Nodeindexes          29
+WARNING:: SteadyPhaseChange:  x:  0.69999999999999996       y:  0.69999999999999996
+WARNING:: SteadyPhaseChange:  dxmin:  0.24445393117535108       dymin:   1.7976931348623157E+308
+WARNING:: SteadyPhaseChange: Isotherm error?
+WARNING:: SteadyPhaseChange:  Nodeindexes          30
+WARNING:: SteadyPhaseChange:  x:  0.59999999999999998       y:  0.60000000000000009
+WARNING:: SteadyPhaseChange:  dxmin:  0.34445393117535106       dymin:   1.7976931348623157E+308
+WARNING:: SteadyPhaseChange: Isotherm error?
+WARNING:: SteadyPhaseChange:  Nodeindexes          31
+WARNING:: SteadyPhaseChange:  x:  0.50000000000000000       y:  0.49999999999999989
+WARNING:: SteadyPhaseChange:  dxmin:  0.44445393117535104       dymin:   1.7976931348623157E+308
+WARNING:: SteadyPhaseChange: Isotherm error?
+WARNING:: SteadyPhaseChange:  Nodeindexes          32
+WARNING:: SteadyPhaseChange:  x:  0.40000000000000002       y:  0.40000000000000013
+WARNING:: SteadyPhaseChange:  dxmin:  0.54445393117535101       dymin:   1.7976931348623157E+308
+WARNING:: SteadyPhaseChange: Isotherm error?
+WARNING:: SteadyPhaseChange:  Nodeindexes          33
+WARNING:: SteadyPhaseChange:  x:  0.29999999999999999       y:  0.29999999999999971
+WARNING:: SteadyPhaseChange:  dxmin:  0.64445393117535099       dymin:   1.7976931348623157E+308
+WARNING:: SteadyPhaseChange: Isotherm error?
+WARNING:: SteadyPhaseChange:  Nodeindexes          34
+WARNING:: SteadyPhaseChange:  x:  0.20000000000000001       y:  0.19999999999999996
+WARNING:: SteadyPhaseChange:  dxmin:  0.74445393117535108       dymin:   1.7976931348623157E+308
+WARNING:: SteadyPhaseChange: Isotherm error?
+WARNING:: SteadyPhaseChange:  Nodeindexes          35
+WARNING:: SteadyPhaseChange:  x:  0.10000000000000001       y:   9.9999999999999756E-002
+WARNING:: SteadyPhaseChange:  dxmin:  0.84445393117535106       dymin:   1.7976931348623157E+308
+WARNING:: SteadyPhaseChange: Isotherm error?
+WARNING:: SteadyPhaseChange:  Nodeindexes           4
+WARNING:: SteadyPhaseChange:  x:   2.4484269165251073E-029  y:  -2.2204460492503131E-016
+WARNING:: SteadyPhaseChange:  dxmin:  0.94445393117535104       dymin:   1.7976931348623157E+308
+WARNING:: SteadyPhaseChange: Isotherm error?
+WARNING:: SteadyPhaseChange:  Nodeindexes          54
+WARNING:: SteadyPhaseChange:  x:  0.90000000000000002       y:  0.89999999999999991
+WARNING:: SteadyPhaseChange:  dxmin:   4.4453931175351014E-002  dymin:   1.7976931348623157E+308
+WARNING:: SteadyPhaseChange: Isotherm error?
+WARNING:: SteadyPhaseChange:  Nodeindexes          55
+WARNING:: SteadyPhaseChange:  x:  0.80000000000000004       y:  0.80000000000000004
+WARNING:: SteadyPhaseChange:  dxmin:  0.14445393117535099       dymin:   1.7976931348623157E+308
+WARNING:: SteadyPhaseChange: Isotherm error?
+WARNING:: SteadyPhaseChange:  Nodeindexes          56
+WARNING:: SteadyPhaseChange:  x:  0.69999999999999996       y:  0.69999999999999996
+WARNING:: SteadyPhaseChange:  dxmin:  0.24445393117535108       dymin:   1.7976931348623157E+308
+WARNING:: SteadyPhaseChange: Isotherm error?
+WARNING:: SteadyPhaseChange:  Nodeindexes          57
+WARNING:: SteadyPhaseChange:  x:  0.59999999999999998       y:  0.59999999999999987
+WARNING:: SteadyPhaseChange:  dxmin:  0.34445393117535106       dymin:   1.7976931348623157E+308
+WARNING:: SteadyPhaseChange: Isotherm error?
+WARNING:: SteadyPhaseChange:  Nodeindexes          58
+WARNING:: SteadyPhaseChange:  x:  0.50000000000000000       y:  0.50000000000000000
+WARNING:: SteadyPhaseChange:  dxmin:  0.44445393117535104       dymin:   1.7976931348623157E+308
+WARNING:: SteadyPhaseChange: Isotherm error?
+WARNING:: SteadyPhaseChange:  Nodeindexes          59
+WARNING:: SteadyPhaseChange:  x:  0.40000000000000002       y:  0.39999999999999969
+WARNING:: SteadyPhaseChange:  dxmin:  0.54445393117535101       dymin:   1.7976931348623157E+308
+WARNING:: SteadyPhaseChange: Isotherm error?
+WARNING:: SteadyPhaseChange:  Nodeindexes          60
+WARNING:: SteadyPhaseChange:  x:  0.29999999999999999       y:  0.29999999999999960
+WARNING:: SteadyPhaseChange:  dxmin:  0.64445393117535099       dymin:   1.7976931348623157E+308
+WARNING:: SteadyPhaseChange: Isotherm error?
+WARNING:: SteadyPhaseChange:  Nodeindexes          61
+WARNING:: SteadyPhaseChange:  x:  0.20000000000000001       y:  0.19999999999999973
+WARNING:: SteadyPhaseChange:  dxmin:  0.74445393117535108       dymin:   1.7976931348623157E+308
+WARNING:: SteadyPhaseChange: Isotherm error?
+WARNING:: SteadyPhaseChange:  Nodeindexes          62
+WARNING:: SteadyPhaseChange:  x:  0.10000000000000001       y:   9.9999999999999645E-002
+WARNING:: SteadyPhaseChange:  dxmin:  0.84445393117535106       dymin:   1.7976931348623157E+308
+WARNING:: SteadyPhaseChange: Isotherm error?
+WARNING:: SteadyPhaseChange:  Nodeindexes           6
+WARNING:: SteadyPhaseChange:  x:   2.4484269165214022E-029  y:  -4.4408920985006262E-016
+WARNING:: SteadyPhaseChange:  dxmin:  0.94445393117535104       dymin:   1.7976931348623157E+308
+SteadyPhaseChange: Result Norm:                        1.1619E+00
+SteadyPhaseChange: Relative Change:                    1.8265E-16
+SteadyPhaseChange: Max Height:                         2.0000E+00
+SteadyPhaseChange: Max Change in Height:               4.4409E-16
+SteadyPhaseChange: Max Angle:                          2.0000E+00
+SteadyPhaseChange: Maximum temperature difference:     1.9383E+02
+ComputeChange: SS (ITER=2) (NRM,RELC): (  1.1618950     0.19110557E-15 ) :: steadyphasechange
+SteadyPhaseChange: --------------------------------------------
+SteadyPhaseChange: Using steady algorithm to find the isotherm
+SteadyPhaseChange: --------------------------------------------
+SteadyPhaseChange: Steady state isoterm formulation
+SteadyPhaseChange: Melting point found:                5.0500E+02
+SteadyPhaseChange: Number of isotherm segments:                44
+WARNING:: SteadyPhaseChange: Isotherm error?
+WARNING:: SteadyPhaseChange:  Nodeindexes          27
+WARNING:: SteadyPhaseChange:  x:  0.90000000000000002       y:  0.90000000000000002
+WARNING:: SteadyPhaseChange:  dxmin:   4.4453931175351014E-002  dymin:   1.7976931348623157E+308
+WARNING:: SteadyPhaseChange: Isotherm error?
+WARNING:: SteadyPhaseChange:  Nodeindexes          28
+WARNING:: SteadyPhaseChange:  x:  0.80000000000000004       y:  0.80000000000000004
+WARNING:: SteadyPhaseChange:  dxmin:  0.14445393117535099       dymin:   1.7976931348623157E+308
+WARNING:: SteadyPhaseChange: Isotherm error?
+WARNING:: SteadyPhaseChange:  Nodeindexes          29
+WARNING:: SteadyPhaseChange:  x:  0.69999999999999996       y:  0.69999999999999996
+WARNING:: SteadyPhaseChange:  dxmin:  0.24445393117535108       dymin:   1.7976931348623157E+308
+WARNING:: SteadyPhaseChange: Isotherm error?
+WARNING:: SteadyPhaseChange:  Nodeindexes          30
+WARNING:: SteadyPhaseChange:  x:  0.59999999999999998       y:  0.60000000000000009
+WARNING:: SteadyPhaseChange:  dxmin:  0.34445393117535106       dymin:   1.7976931348623157E+308
+WARNING:: SteadyPhaseChange: Isotherm error?
+WARNING:: SteadyPhaseChange:  Nodeindexes          31
+WARNING:: SteadyPhaseChange:  x:  0.50000000000000000       y:  0.49999999999999989
+WARNING:: SteadyPhaseChange:  dxmin:  0.44445393117535104       dymin:   1.7976931348623157E+308
+WARNING:: SteadyPhaseChange: Isotherm error?
+WARNING:: SteadyPhaseChange:  Nodeindexes          32
+WARNING:: SteadyPhaseChange:  x:  0.40000000000000002       y:  0.40000000000000013
+WARNING:: SteadyPhaseChange:  dxmin:  0.54445393117535101       dymin:   1.7976931348623157E+308
+WARNING:: SteadyPhaseChange: Isotherm error?
+WARNING:: SteadyPhaseChange:  Nodeindexes          33
+WARNING:: SteadyPhaseChange:  x:  0.29999999999999999       y:  0.29999999999999971
+WARNING:: SteadyPhaseChange:  dxmin:  0.64445393117535099       dymin:   1.7976931348623157E+308
+WARNING:: SteadyPhaseChange: Isotherm error?
+WARNING:: SteadyPhaseChange:  Nodeindexes          34
+WARNING:: SteadyPhaseChange:  x:  0.20000000000000001       y:  0.19999999999999996
+WARNING:: SteadyPhaseChange:  dxmin:  0.74445393117535108       dymin:   1.7976931348623157E+308
+WARNING:: SteadyPhaseChange: Isotherm error?
+WARNING:: SteadyPhaseChange:  Nodeindexes          35
+WARNING:: SteadyPhaseChange:  x:  0.10000000000000001       y:   9.9999999999999756E-002
+WARNING:: SteadyPhaseChange:  dxmin:  0.84445393117535106       dymin:   1.7976931348623157E+308
+WARNING:: SteadyPhaseChange: Isotherm error?
+WARNING:: SteadyPhaseChange:  Nodeindexes           4
+WARNING:: SteadyPhaseChange:  x:   2.4484269165251073E-029  y:  -2.2204460492503131E-016
+WARNING:: SteadyPhaseChange:  dxmin:  0.94445393117535104       dymin:   1.7976931348623157E+308
+WARNING:: SteadyPhaseChange: Isotherm error?
+WARNING:: SteadyPhaseChange:  Nodeindexes          54
+WARNING:: SteadyPhaseChange:  x:  0.90000000000000002       y:  0.89999999999999991
+WARNING:: SteadyPhaseChange:  dxmin:   4.4453931175351014E-002  dymin:   1.7976931348623157E+308
+WARNING:: SteadyPhaseChange: Isotherm error?
+WARNING:: SteadyPhaseChange:  Nodeindexes          55
+WARNING:: SteadyPhaseChange:  x:  0.80000000000000004       y:  0.80000000000000004
+WARNING:: SteadyPhaseChange:  dxmin:  0.14445393117535099       dymin:   1.7976931348623157E+308
+WARNING:: SteadyPhaseChange: Isotherm error?
+WARNING:: SteadyPhaseChange:  Nodeindexes          56
+WARNING:: SteadyPhaseChange:  x:  0.69999999999999996       y:  0.69999999999999996
+WARNING:: SteadyPhaseChange:  dxmin:  0.24445393117535108       dymin:   1.7976931348623157E+308
+WARNING:: SteadyPhaseChange: Isotherm error?
+WARNING:: SteadyPhaseChange:  Nodeindexes          57
+WARNING:: SteadyPhaseChange:  x:  0.59999999999999998       y:  0.59999999999999987
+WARNING:: SteadyPhaseChange:  dxmin:  0.34445393117535106       dymin:   1.7976931348623157E+308
+WARNING:: SteadyPhaseChange: Isotherm error?
+WARNING:: SteadyPhaseChange:  Nodeindexes          58
+WARNING:: SteadyPhaseChange:  x:  0.50000000000000000       y:  0.50000000000000000
+WARNING:: SteadyPhaseChange:  dxmin:  0.44445393117535104       dymin:   1.7976931348623157E+308
+WARNING:: SteadyPhaseChange: Isotherm error?
+WARNING:: SteadyPhaseChange:  Nodeindexes          59
+WARNING:: SteadyPhaseChange:  x:  0.40000000000000002       y:  0.39999999999999969
+WARNING:: SteadyPhaseChange:  dxmin:  0.54445393117535101       dymin:   1.7976931348623157E+308
+WARNING:: SteadyPhaseChange: Isotherm error?
+WARNING:: SteadyPhaseChange:  Nodeindexes          60
+WARNING:: SteadyPhaseChange:  x:  0.29999999999999999       y:  0.29999999999999960
+WARNING:: SteadyPhaseChange:  dxmin:  0.64445393117535099       dymin:   1.7976931348623157E+308
+WARNING:: SteadyPhaseChange: Isotherm error?
+WARNING:: SteadyPhaseChange:  Nodeindexes          61
+WARNING:: SteadyPhaseChange:  x:  0.20000000000000001       y:  0.19999999999999973
+WARNING:: SteadyPhaseChange:  dxmin:  0.74445393117535108       dymin:   1.7976931348623157E+308
+WARNING:: SteadyPhaseChange: Isotherm error?
+WARNING:: SteadyPhaseChange:  Nodeindexes          62
+WARNING:: SteadyPhaseChange:  x:  0.10000000000000001       y:   9.9999999999999645E-002
+WARNING:: SteadyPhaseChange:  dxmin:  0.84445393117535106       dymin:   1.7976931348623157E+308
+WARNING:: SteadyPhaseChange: Isotherm error?
+WARNING:: SteadyPhaseChange:  Nodeindexes           6
+WARNING:: SteadyPhaseChange:  x:   2.4484269165214022E-029  y:  -4.4408920985006262E-016
+WARNING:: SteadyPhaseChange:  dxmin:  0.94445393117535104       dymin:   1.7976931348623157E+308
+SteadyPhaseChange: Result Norm:                        1.1619E+00
+SteadyPhaseChange: Relative Change:                    1.8265E-16
+SteadyPhaseChange: Max Height:                         2.0000E+00
+SteadyPhaseChange: Max Change in Height:               4.4409E-16
+SteadyPhaseChange: Max Angle:                          2.0000E+00
+SteadyPhaseChange: Maximum temperature difference:     1.9383E+02
+ComputeChange: SS (ITER=2) (NRM,RELC): (  1.1618950     0.19110557E-15 ) :: steadyphasechange2
+MeshSolve: 
+MeshSolve: -------------------------------------
+MeshSolve: MESH UPDATE SOLVER:
+MeshSolve: -------------------------------------
+MeshSolve: 
+MeshSolve: Starting assembly...
+MeshSolve: Assembly done
+MeshSolve: Set boundaries done
+       1 0.5566E-11
+       1 0.5566E-11
+ComputeChange: NS (ITER=1) (NRM,RELC): ( 0.57337512     0.88279534E-10 ) :: mesh update
+MeshSolve:  Result Norm   :   0.57337511735408964
+MeshSolve:  Relative Change :    8.8279533954183623E-011
+ComputeChange: SS (ITER=2) (NRM,RELC): ( 0.57337512     0.88279534E-10 ) :: mesh update
+ResultOutputSolver: -------------------------------------
+ResultOutputSolver: Saving in unstructured VTK XML (.vtu) format
+ResultOutputSolver: -------------------------------------
+MAIN: 
+MAIN: -------------------------------------
+MAIN:  Steady state iteration:            3
+MAIN: -------------------------------------
+MAIN: 
+HeatSolve: 
+HeatSolve: 
+HeatSolve: -------------------------------------
+HeatSolve:  TEMPERATURE ITERATION           1
+HeatSolve: -------------------------------------
+HeatSolve: 
+HeatSolve: Starting Assembly...
+HeatSolve: Assembly done
+       1 0.1120E-06
+       2 0.4032E-07
+       3 0.2538E-07
+       4 0.3084E-07
+       5 0.1591E-06
+       6 0.1829E-07
+       7 0.9094E-07
+       8 0.8858E-08
+       8 0.8858E-08
+ComputeChange: NS (ITER=1) (NRM,RELC): (  374.50482     0.11201705E-06 ) :: heatsolver
+HeatSolve: iter:    1 Assembly: (s)    0.01    0.01
+HeatSolve: iter:    1 Solve:    (s)    0.00    0.00
+HeatSolve:  Result Norm   :    374.50481806058929
+HeatSolve:  Relative Change :    1.1201705069250998E-007
+ComputeChange: SS (ITER=3) (NRM,RELC): (  374.50482     0.11201705E-06 ) :: heatsolver
+SteadyPhaseChange: --------------------------------------------
+SteadyPhaseChange: Using steady algorithm to find the isotherm
+SteadyPhaseChange: --------------------------------------------
+SteadyPhaseChange: Steady state isoterm formulation
+SteadyPhaseChange: Melting point found:                5.0500E+02
+SteadyPhaseChange: Number of isotherm segments:                44
+WARNING:: SteadyPhaseChange: Isotherm error?
+WARNING:: SteadyPhaseChange:  Nodeindexes          27
+WARNING:: SteadyPhaseChange:  x:  0.90000000000000002       y:  0.90000000000000002
+WARNING:: SteadyPhaseChange:  dxmin:   4.4454064733581378E-002  dymin:   1.7976931348623157E+308
+WARNING:: SteadyPhaseChange: Isotherm error?
+WARNING:: SteadyPhaseChange:  Nodeindexes          28
+WARNING:: SteadyPhaseChange:  x:  0.80000000000000004       y:  0.80000000000000004
+WARNING:: SteadyPhaseChange:  dxmin:  0.14445406473358136       dymin:   1.7976931348623157E+308
+WARNING:: SteadyPhaseChange: Isotherm error?
+WARNING:: SteadyPhaseChange:  Nodeindexes          29
+WARNING:: SteadyPhaseChange:  x:  0.69999999999999996       y:  0.69999999999999996
+WARNING:: SteadyPhaseChange:  dxmin:  0.24445406473358144       dymin:   1.7976931348623157E+308
+WARNING:: SteadyPhaseChange: Isotherm error?
+WARNING:: SteadyPhaseChange:  Nodeindexes          30
+WARNING:: SteadyPhaseChange:  x:  0.59999999999999998       y:  0.59999999999999964
+WARNING:: SteadyPhaseChange:  dxmin:  0.34445406473358142       dymin:   1.7976931348623157E+308
+WARNING:: SteadyPhaseChange: Isotherm error?
+WARNING:: SteadyPhaseChange:  Nodeindexes          31
+WARNING:: SteadyPhaseChange:  x:  0.50000000000000000       y:  0.50000000000000000
+WARNING:: SteadyPhaseChange:  dxmin:  0.44445406473358140       dymin:   1.7976931348623157E+308
+WARNING:: SteadyPhaseChange: Isotherm error?
+WARNING:: SteadyPhaseChange:  Nodeindexes          32
+WARNING:: SteadyPhaseChange:  x:  0.40000000000000002       y:  0.39999999999999991
+WARNING:: SteadyPhaseChange:  dxmin:  0.54445406473358138       dymin:   1.7976931348623157E+308
+WARNING:: SteadyPhaseChange: Isotherm error?
+WARNING:: SteadyPhaseChange:  Nodeindexes          33
+WARNING:: SteadyPhaseChange:  x:  0.29999999999999999       y:  0.30000000000000016
+WARNING:: SteadyPhaseChange:  dxmin:  0.64445406473358147       dymin:   1.7976931348623157E+308
+WARNING:: SteadyPhaseChange: Isotherm error?
+WARNING:: SteadyPhaseChange:  Nodeindexes          34
+WARNING:: SteadyPhaseChange:  x:  0.20000000000000001       y:  0.19999999999999996
+WARNING:: SteadyPhaseChange:  dxmin:  0.74445406473358133       dymin:   1.7976931348623157E+308
+WARNING:: SteadyPhaseChange: Isotherm error?
+WARNING:: SteadyPhaseChange:  Nodeindexes          35
+WARNING:: SteadyPhaseChange:  x:  0.10000000000000001       y:  0.10000000000000020
+WARNING:: SteadyPhaseChange:  dxmin:  0.84445406473358142       dymin:   1.7976931348623157E+308
+WARNING:: SteadyPhaseChange: Isotherm error?
+WARNING:: SteadyPhaseChange:  Nodeindexes           4
+WARNING:: SteadyPhaseChange:  x:  -1.6041205451887501E-030  y:   1.1102230246251565E-016
+WARNING:: SteadyPhaseChange:  dxmin:  0.94445406473358140       dymin:   1.7976931348623157E+308
+WARNING:: SteadyPhaseChange: Isotherm error?
+WARNING:: SteadyPhaseChange:  Nodeindexes          54
+WARNING:: SteadyPhaseChange:  x:  0.90000000000000002       y:  0.89999999999999969
+WARNING:: SteadyPhaseChange:  dxmin:   4.4454064733581378E-002  dymin:   1.7976931348623157E+308
+WARNING:: SteadyPhaseChange: Isotherm error?
+WARNING:: SteadyPhaseChange:  Nodeindexes          55
+WARNING:: SteadyPhaseChange:  x:  0.80000000000000004       y:  0.80000000000000004
+WARNING:: SteadyPhaseChange:  dxmin:  0.14445406473358136       dymin:   1.7976931348623157E+308
+WARNING:: SteadyPhaseChange: Isotherm error?
+WARNING:: SteadyPhaseChange:  Nodeindexes          56
+WARNING:: SteadyPhaseChange:  x:  0.69999999999999996       y:  0.69999999999999996
+WARNING:: SteadyPhaseChange:  dxmin:  0.24445406473358144       dymin:   1.7976931348623157E+308
+WARNING:: SteadyPhaseChange: Isotherm error?
+WARNING:: SteadyPhaseChange:  Nodeindexes          57
+WARNING:: SteadyPhaseChange:  x:  0.59999999999999998       y:  0.59999999999999987
+WARNING:: SteadyPhaseChange:  dxmin:  0.34445406473358142       dymin:   1.7976931348623157E+308
+WARNING:: SteadyPhaseChange: Isotherm error?
+WARNING:: SteadyPhaseChange:  Nodeindexes          58
+WARNING:: SteadyPhaseChange:  x:  0.50000000000000000       y:  0.50000000000000000
+WARNING:: SteadyPhaseChange:  dxmin:  0.44445406473358140       dymin:   1.7976931348623157E+308
+WARNING:: SteadyPhaseChange: Isotherm error?
+WARNING:: SteadyPhaseChange:  Nodeindexes          59
+WARNING:: SteadyPhaseChange:  x:  0.40000000000000002       y:  0.40000000000000036
+WARNING:: SteadyPhaseChange:  dxmin:  0.54445406473358138       dymin:   1.7976931348623157E+308
+WARNING:: SteadyPhaseChange: Isotherm error?
+WARNING:: SteadyPhaseChange:  Nodeindexes          60
+WARNING:: SteadyPhaseChange:  x:  0.29999999999999999       y:  0.29999999999999960
+WARNING:: SteadyPhaseChange:  dxmin:  0.64445406473358147       dymin:   1.7976931348623157E+308
+WARNING:: SteadyPhaseChange: Isotherm error?
+WARNING:: SteadyPhaseChange:  Nodeindexes          61
+WARNING:: SteadyPhaseChange:  x:  0.20000000000000001       y:  0.19999999999999996
+WARNING:: SteadyPhaseChange:  dxmin:  0.74445406473358133       dymin:   1.7976931348623157E+308
+WARNING:: SteadyPhaseChange: Isotherm error?
+WARNING:: SteadyPhaseChange:  Nodeindexes          62
+WARNING:: SteadyPhaseChange:  x:  0.10000000000000001       y:  0.10000000000000031
+WARNING:: SteadyPhaseChange:  dxmin:  0.84445406473358142       dymin:   1.7976931348623157E+308
+WARNING:: SteadyPhaseChange: Isotherm error?
+WARNING:: SteadyPhaseChange:  Nodeindexes           6
+WARNING:: SteadyPhaseChange:  x:  -1.6041205451863227E-030  y:   4.4408920985006262E-016
+WARNING:: SteadyPhaseChange:  dxmin:  0.94445406473358140       dymin:   1.7976931348623157E+308
+SteadyPhaseChange: Result Norm:                        1.1619E+00
+SteadyPhaseChange: Relative Change:                    1.8560E-16
+SteadyPhaseChange: Max Height:                         2.0000E+00
+SteadyPhaseChange: Max Change in Height:               4.4409E-16
+SteadyPhaseChange: Max Angle:                          2.0000E+00
+SteadyPhaseChange: Maximum temperature difference:     1.9383E+02
+ComputeChange: SS (ITER=3) (NRM,RELC): (  1.1618950     0.19110557E-15 ) :: steadyphasechange
+SteadyPhaseChange: --------------------------------------------
+SteadyPhaseChange: Using steady algorithm to find the isotherm
+SteadyPhaseChange: --------------------------------------------
+SteadyPhaseChange: Steady state isoterm formulation
+SteadyPhaseChange: Melting point found:                5.0500E+02
+SteadyPhaseChange: Number of isotherm segments:                44
+WARNING:: SteadyPhaseChange: Isotherm error?
+WARNING:: SteadyPhaseChange:  Nodeindexes          27
+WARNING:: SteadyPhaseChange:  x:  0.90000000000000002       y:  0.90000000000000002
+WARNING:: SteadyPhaseChange:  dxmin:   4.4454064733581378E-002  dymin:   1.7976931348623157E+308
+WARNING:: SteadyPhaseChange: Isotherm error?
+WARNING:: SteadyPhaseChange:  Nodeindexes          28
+WARNING:: SteadyPhaseChange:  x:  0.80000000000000004       y:  0.80000000000000004
+WARNING:: SteadyPhaseChange:  dxmin:  0.14445406473358136       dymin:   1.7976931348623157E+308
+WARNING:: SteadyPhaseChange: Isotherm error?
+WARNING:: SteadyPhaseChange:  Nodeindexes          29
+WARNING:: SteadyPhaseChange:  x:  0.69999999999999996       y:  0.69999999999999996
+WARNING:: SteadyPhaseChange:  dxmin:  0.24445406473358144       dymin:   1.7976931348623157E+308
+WARNING:: SteadyPhaseChange: Isotherm error?
+WARNING:: SteadyPhaseChange:  Nodeindexes          30
+WARNING:: SteadyPhaseChange:  x:  0.59999999999999998       y:  0.59999999999999964
+WARNING:: SteadyPhaseChange:  dxmin:  0.34445406473358142       dymin:   1.7976931348623157E+308
+WARNING:: SteadyPhaseChange: Isotherm error?
+WARNING:: SteadyPhaseChange:  Nodeindexes          31
+WARNING:: SteadyPhaseChange:  x:  0.50000000000000000       y:  0.50000000000000000
+WARNING:: SteadyPhaseChange:  dxmin:  0.44445406473358140       dymin:   1.7976931348623157E+308
+WARNING:: SteadyPhaseChange: Isotherm error?
+WARNING:: SteadyPhaseChange:  Nodeindexes          32
+WARNING:: SteadyPhaseChange:  x:  0.40000000000000002       y:  0.39999999999999991
+WARNING:: SteadyPhaseChange:  dxmin:  0.54445406473358138       dymin:   1.7976931348623157E+308
+WARNING:: SteadyPhaseChange: Isotherm error?
+WARNING:: SteadyPhaseChange:  Nodeindexes          33
+WARNING:: SteadyPhaseChange:  x:  0.29999999999999999       y:  0.30000000000000016
+WARNING:: SteadyPhaseChange:  dxmin:  0.64445406473358147       dymin:   1.7976931348623157E+308
+WARNING:: SteadyPhaseChange: Isotherm error?
+WARNING:: SteadyPhaseChange:  Nodeindexes          34
+WARNING:: SteadyPhaseChange:  x:  0.20000000000000001       y:  0.19999999999999996
+WARNING:: SteadyPhaseChange:  dxmin:  0.74445406473358133       dymin:   1.7976931348623157E+308
+WARNING:: SteadyPhaseChange: Isotherm error?
+WARNING:: SteadyPhaseChange:  Nodeindexes          35
+WARNING:: SteadyPhaseChange:  x:  0.10000000000000001       y:  0.10000000000000020
+WARNING:: SteadyPhaseChange:  dxmin:  0.84445406473358142       dymin:   1.7976931348623157E+308
+WARNING:: SteadyPhaseChange: Isotherm error?
+WARNING:: SteadyPhaseChange:  Nodeindexes           4
+WARNING:: SteadyPhaseChange:  x:  -1.6041205451887501E-030  y:   1.1102230246251565E-016
+WARNING:: SteadyPhaseChange:  dxmin:  0.94445406473358140       dymin:   1.7976931348623157E+308
+WARNING:: SteadyPhaseChange: Isotherm error?
+WARNING:: SteadyPhaseChange:  Nodeindexes          54
+WARNING:: SteadyPhaseChange:  x:  0.90000000000000002       y:  0.89999999999999969
+WARNING:: SteadyPhaseChange:  dxmin:   4.4454064733581378E-002  dymin:   1.7976931348623157E+308
+WARNING:: SteadyPhaseChange: Isotherm error?
+WARNING:: SteadyPhaseChange:  Nodeindexes          55
+WARNING:: SteadyPhaseChange:  x:  0.80000000000000004       y:  0.80000000000000004
+WARNING:: SteadyPhaseChange:  dxmin:  0.14445406473358136       dymin:   1.7976931348623157E+308
+WARNING:: SteadyPhaseChange: Isotherm error?
+WARNING:: SteadyPhaseChange:  Nodeindexes          56
+WARNING:: SteadyPhaseChange:  x:  0.69999999999999996       y:  0.69999999999999996
+WARNING:: SteadyPhaseChange:  dxmin:  0.24445406473358144       dymin:   1.7976931348623157E+308
+WARNING:: SteadyPhaseChange: Isotherm error?
+WARNING:: SteadyPhaseChange:  Nodeindexes          57
+WARNING:: SteadyPhaseChange:  x:  0.59999999999999998       y:  0.59999999999999987
+WARNING:: SteadyPhaseChange:  dxmin:  0.34445406473358142       dymin:   1.7976931348623157E+308
+WARNING:: SteadyPhaseChange: Isotherm error?
+WARNING:: SteadyPhaseChange:  Nodeindexes          58
+WARNING:: SteadyPhaseChange:  x:  0.50000000000000000       y:  0.50000000000000000
+WARNING:: SteadyPhaseChange:  dxmin:  0.44445406473358140       dymin:   1.7976931348623157E+308
+WARNING:: SteadyPhaseChange: Isotherm error?
+WARNING:: SteadyPhaseChange:  Nodeindexes          59
+WARNING:: SteadyPhaseChange:  x:  0.40000000000000002       y:  0.40000000000000036
+WARNING:: SteadyPhaseChange:  dxmin:  0.54445406473358138       dymin:   1.7976931348623157E+308
+WARNING:: SteadyPhaseChange: Isotherm error?
+WARNING:: SteadyPhaseChange:  Nodeindexes          60
+WARNING:: SteadyPhaseChange:  x:  0.29999999999999999       y:  0.29999999999999960
+WARNING:: SteadyPhaseChange:  dxmin:  0.64445406473358147       dymin:   1.7976931348623157E+308
+WARNING:: SteadyPhaseChange: Isotherm error?
+WARNING:: SteadyPhaseChange:  Nodeindexes          61
+WARNING:: SteadyPhaseChange:  x:  0.20000000000000001       y:  0.19999999999999996
+WARNING:: SteadyPhaseChange:  dxmin:  0.74445406473358133       dymin:   1.7976931348623157E+308
+WARNING:: SteadyPhaseChange: Isotherm error?
+WARNING:: SteadyPhaseChange:  Nodeindexes          62
+WARNING:: SteadyPhaseChange:  x:  0.10000000000000001       y:  0.10000000000000031
+WARNING:: SteadyPhaseChange:  dxmin:  0.84445406473358142       dymin:   1.7976931348623157E+308
+WARNING:: SteadyPhaseChange: Isotherm error?
+WARNING:: SteadyPhaseChange:  Nodeindexes           6
+WARNING:: SteadyPhaseChange:  x:  -1.6041205451863227E-030  y:   4.4408920985006262E-016
+WARNING:: SteadyPhaseChange:  dxmin:  0.94445406473358140       dymin:   1.7976931348623157E+308
+SteadyPhaseChange: Result Norm:                        1.1619E+00
+SteadyPhaseChange: Relative Change:                    1.8560E-16
+SteadyPhaseChange: Max Height:                         2.0000E+00
+SteadyPhaseChange: Max Change in Height:               4.4409E-16
+SteadyPhaseChange: Max Angle:                          2.0000E+00
+SteadyPhaseChange: Maximum temperature difference:     1.9383E+02
+ComputeChange: SS (ITER=3) (NRM,RELC): (  1.1618950     0.19110557E-15 ) :: steadyphasechange2
+MeshSolve: 
+MeshSolve: -------------------------------------
+MeshSolve: MESH UPDATE SOLVER:
+MeshSolve: -------------------------------------
+MeshSolve: 
+MeshSolve: Starting assembly...
+MeshSolve: Assembly done
+MeshSolve: Set boundaries done
+       1 0.3566E-12
+       1 0.3566E-12
+ComputeChange: NS (ITER=1) (NRM,RELC): ( 0.57337512     0.12114619E-10 ) :: mesh update
+MeshSolve:  Result Norm   :   0.57337511736103586
+MeshSolve:  Relative Change :    1.2114619497061325E-011
+ComputeChange: SS (ITER=3) (NRM,RELC): ( 0.57337512     0.12114619E-10 ) :: mesh update
+ResultOutputSolver: -------------------------------------
+ResultOutputSolver: Saving in unstructured VTK XML (.vtu) format
+ResultOutputSolver: -------------------------------------
+ElmerSolver: *** Elmer Solver: ALL DONE ***
+ElmerSolver: The end
+SOLVER TOTAL TIME(CPU,REAL):         0.27        0.27
+ELMER SOLVER FINISHED AT: 2022/03/25 07:50:59

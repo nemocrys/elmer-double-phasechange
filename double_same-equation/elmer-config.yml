@@ -1,0 +1,81 @@
+axi-symmetric_steady:
+  Max Output Level: 4
+  Coordinate System: Axi Symmetric
+  Simulation Type: Steady state
+  Steady State Max Iterations: 10
+  Output File: case.result
+
+HeatSolver:
+  Equation: HeatSolver
+  Procedure: '"HeatSolve" "HeatSolver"'
+  Variable: '"Temperature"'
+  Variable Dofs: 1
+  Calculate Loads: True
+  Exec Solver: Always
+  Nonlinear System Convergence Tolerance: 1.0e-6
+  Nonlinear System Max Iterations: 1000
+  Nonlinear System Relaxation Factor: 0.7
+  Steady State Convergence Tolerance: 1.0e-6
+  Stabilize: True  # Necessary in convection-dominated systems
+  Optimize Bandwidth: True
+  Linear System Solver: Iterative  
+  Linear System Iterative Method: BiCGStab
+  Linear System Max Iterations: 1000
+  Linear System Preconditioning: ILU
+  Linear System Precondition Recompute: 1
+  Linear System Convergence Tolerance: 1.0e-8
+  Linear System Abort Not Converged: True
+  Linear System Residual Output: 1
+  Smart Heater Control After Tolerance: 1.0e-4
+
+ResultOutputSolver:
+  Exec Solver: 'After timestep'
+  Equation: ResultOutputSolver
+  Procedure: '"ResultOutputSolve" "ResultOutputSolver"'
+  VTU Format: True
+  Save Geometry Ids: 'Logical True'
+
+
+SteadyPhaseChange:
+  Equation: SteadyPhaseChange
+  Variable: '"PhaseSurface"'
+  Procedure: '"SteadyPhaseChange" "SteadyPhaseChange"'
+  # Internal Mesh Movement: 'Logical True'
+  
+SteadyPhaseChange2:
+  Equation: SteadyPhaseChange2
+  Variable: '"PhaseSurface2"'
+  Procedure: '"SteadyPhaseChange" "SteadyPhaseChange"'
+  # Internal Mesh Movement: 'Logical True'
+
+MeshUpdate:
+  Equation: Mesh Update
+  Linear System Solver: Iterative
+  Linear System Iterative Method: BiCGStab
+  Linear System Preconditioning: ILU1
+  Linear System Max Iterations: 10000
+  Linear System Convergence Tolerance: 1.0e-9
+  Linear System Residual Output: 1
+  Steady State Convergence Tolerance: 1.0e-6
+
+tin_liquid:
+  Density: 6980.0
+  Electric Conductivity: 2080000
+  Emissivity: 0.064  # set equal to solid
+  Heat Capacity: 252.7
+  Heat Conductivity: 29.0
+  Relative Permeability: 1
+  Relative Permittivity: 1
+  Liquid: 'Logical True'
+
+tin_solid:
+  Density: 7179.0
+  Electric Conductivity: 4380000
+  Emissivity: 0.064
+  Heat Capacity: 244.0
+  Heat Conductivity: 60.0
+  Relative Permeability: 1
+  Relative Permittivity: 1
+  Solid: 'Logical True'
+  Melting Point: 505
+  Latent Heat: 59600

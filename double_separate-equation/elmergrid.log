@@ -1,0 +1,81 @@
+
+Starting program Elmergrid
+Elmergrid reading in-line arguments
+Output will be saved to file case.
+
+Elmergrid loading data:
+-----------------------
+Format chosen using the first line: $MeshFormat
+Gmsh version is 4.1
+Loading mesh in Gmsh format 4.1 from file case.msh
+Reading 8 entities in 0D
+Reading 10 entities in 1D
+Reading 3 entities in 2D
+Allocating for 411 knots and 840 elements.
+Physical groups of dimension 1 not supported in 3-dimensional mesh: ignoring group 4 "if_crystal_melt"
+Physical groups of dimension 1 not supported in 3-dimensional mesh: ignoring group 5 "if_feed_melt"
+Physical groups of dimension 1 not supported in 3-dimensional mesh: ignoring group 6 "bnd_melt"
+Physical groups of dimension 1 not supported in 3-dimensional mesh: ignoring group 7 "bnd_crys"
+Physical groups of dimension 1 not supported in 3-dimensional mesh: ignoring group 8 "bnd_feed"
+Physical groups of dimension 1 not supported in 3-dimensional mesh: ignoring group 9 "bnd_others"
+Boundary name for physical group 1 is: crystal
+Boundary name for physical group 2 is: melt
+Boundary name for physical group 3 is: feed
+Allocating lookup table for tags of size 22
+Maximum original tag for 10 1DIM entities is 22
+Maximum original tag for 3 2DIM entities is 3
+Reading 411 nodes in 21 blocks.
+Reading 840 elements in 13 blocks.
+Reading 10 elements with tag 13 of type 202
+Mapping mesh tag 13 to physical tag 7 in 1DIM
+Reading 10 elements with tag 14 of type 202
+Mapping mesh tag 14 to physical tag 9 in 1DIM
+Reading 10 elements with tag 15 of type 202
+Mapping mesh tag 15 to physical tag 4 in 1DIM
+Reading 10 elements with tag 16 of type 202
+Mapping mesh tag 16 to physical tag 9 in 1DIM
+Reading 10 elements with tag 17 of type 202
+Mapping mesh tag 17 to physical tag 6 in 1DIM
+Reading 10 elements with tag 18 of type 202
+Mapping mesh tag 18 to physical tag 5 in 1DIM
+Reading 10 elements with tag 19 of type 202
+Mapping mesh tag 19 to physical tag 9 in 1DIM
+Reading 10 elements with tag 20 of type 202
+Mapping mesh tag 20 to physical tag 9 in 1DIM
+Reading 10 elements with tag 21 of type 202
+Mapping mesh tag 21 to physical tag 8 in 1DIM
+Reading 10 elements with tag 22 of type 202
+Mapping mesh tag 22 to physical tag 9 in 1DIM
+Reading 248 elements with tag 1 of type 303
+Mapping mesh tag 1 to physical tag 1 in 2DIM
+Reading 248 elements with tag 2 of type 303
+Mapping mesh tag 2 to physical tag 2 in 2DIM
+Reading 244 elements with tag 3 of type 303
+Mapping mesh tag 3 to physical tag 3 in 2DIM
+Moving bulk elements to boundary elements
+Leading bulk elementtype is 303
+Trailing bulk elementtype is 202
+There are 100 (out of 840) lower dimensional elements.
+Node 27 belongs to maximum of 8 elements
+Found 20 side elements that have two parents.
+Found correctly 100 side elements.
+Parent elements were reordered up to index 740.
+Moved 740 elements (out of 840) to new positions
+Successfully read the mesh from the Gmsh input file.
+Using physical numbering of entities
+
+Elmergrid creating and manipulating meshes:
+-------------------------------------------
+
+Elmergrid saving data with method 2:
+-------------------------------------
+Saving mesh in ElmerSolver format to directory case.
+Saving 411 coordinates to mesh.nodes.
+Saving 740 element topologies to mesh.elements.
+Saving boundary elements to mesh.boundary.
+Saving header info to mesh.header.
+Saving names info to mesh.names.
+Saving entities info to entities.sif.
+
+Thank you for using Elmergrid!
+Send bug reports and feature wishes to elmeradm@csc.fi
