@@ -74,7 +74,17 @@ And there is no useful result:
 
 The setup / result / log files can be found in the directory `double_same-equation`.
 
+### separate-routine
+
+Two phase change solvers, each of them in a separate Elmer equation. The second phase change solver is defined in `SteadyPhaseChange2.F90` where some variables have been renamed (a '2' was added), as suggested [here](http://www.elmerfem.org/forum/viewtopic.php?p=26506). This is compiled to `SteadyPhaseChange2.so` before the simulation is executed. The result looks as expected:
+
+![result-double-_separate-routine](double_separate-routine/result.png)
+
+The setup / result / log files can be found in the directory `double_separate-routine`.
+
 ## Acknowledgements
+
+We'd like to thank Peter Råback for [helping us to find the correct implementation](http://www.elmerfem.org/forum/viewtopic.php?p=26506)!
 
 [This project](https://www.researchgate.net/project/NEMOCRYS-Next-Generation-Multiphysical-Models-for-Crystal-Growth-Processes) has received funding from the European Research Council (ERC) under the European Union's Horizon 2020 research and innovation programme (grant agreement No 851768).
 
