@@ -86,6 +86,6 @@ The setup / result / log files can be found in the directory `double_separate-ro
 
 We'd like to thank Peter Råback for [helping us to find the correct implementation](http://www.elmerfem.org/forum/viewtopic.php?p=26506)!
 
-[This project](https://www.researchgate.net/project/NEMOCRYS-Next-Generation-Multiphysical-Models-for-Crystal-Growth-Processes) has received funding from the European Research Council (ERC) under the European Union's Horizon 2020 research and innovation programme (grant agreement No 851768).
+[This project](https://nemocrys.github.io/) has received funding from the European Research Council (ERC) under the European Union's Horizon 2020 research and innovation programme (grant agreement No 851768).
 
 <img src="https://raw.githubusercontent.com/nemocrys/pyelmer/master/EU-ERC.png">
