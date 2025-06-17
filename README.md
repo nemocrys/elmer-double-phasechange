@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/473891500.svg)](https://doi.org/10.5281/zenodo.15683909)
+
 # elmer-double-phasechange
 
 Testing of Elmer simulations with multiple phase boundaries.
